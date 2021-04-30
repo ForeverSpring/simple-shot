@@ -734,6 +734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameobjDanmuBall: {fileID: 6548450863832989570, guid: 78ed7cb8f1e78f740b23b06a345552e9,
     type: 3}
+  gameobjDanmuBallReflect: {fileID: 579186459071614056, guid: 7cd28f3f78c730541abf62f12bffc6f5,
+    type: 3}
   gameobjBoss: {fileID: 1548701442}
 --- !u!4 &2124686375
 Transform:

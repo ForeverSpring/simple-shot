@@ -5,11 +5,11 @@ using UnityEngine;
 public class controlPlayer : MonoBehaviour {
     private float speedPlayerMove1 = 9;
     private float speedPlayerMove2 = 4.5f;
-    private float xMin = -10f, xMax = 10f, yMin = -4.7f, yMax = 4.7f;
     private Rigidbody rb;
     private bool inLowSpeed;
 
     void Update() {
+        //低速模式显示判定点，高速模式隐藏判定点
         if (inLowSpeed) {
             this.GetComponent<Renderer>().enabled = true;
         }
@@ -46,6 +46,7 @@ public class controlPlayer : MonoBehaviour {
         else {
             inLowSpeed = false;
         }
+        //根据移动方向设置移动速度，保证速度向量大小不变
         Vector3 movement;
         if (moveHorizontal != 0 || moveVertical != 0) {
             float temp = Mathf.Sqrt(moveHorizontal * moveHorizontal + moveVertical * moveVertical);
@@ -55,9 +56,12 @@ public class controlPlayer : MonoBehaviour {
             movement = new Vector3(0f, 0f, 0f);
         }
         rb.velocity = movement * moveSpeed;
-        /*限制坐标*/
-        rb.position = new Vector3(Mathf.Clamp(rb.position.x, xMin, xMax),
-        Mathf.Clamp(rb.position.y, yMin, yMax),
+        //TODO：修改边界的反弹错误
+        //transform.position = transform.position + movement * moveSpeed * Time.fixedDeltaTime;
+
+        //限制坐标在边界内
+        rb.position = new Vector3(Mathf.Clamp(rb.position.x, Boundary.xMin, Boundary.xMax),
+        Mathf.Clamp(rb.position.y, Boundary.yMin, Boundary.yMax),
         0.0f);
     }
 }

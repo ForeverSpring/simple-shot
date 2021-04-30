@@ -64,6 +64,7 @@
     <Compile Include="Assets\脚本\DestroyDanmu.cs" />
     <Compile Include="Assets\脚本\GameControl.cs" />
     <Compile Include="Assets\脚本\moveDanmuBall.cs" />
+    <Compile Include="Assets\脚本\moveDanmuBallReflect.cs" />
     <Compile Include="Assets\脚本\判定点碰撞.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/unity/simple shot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

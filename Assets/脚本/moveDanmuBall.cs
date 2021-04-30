@@ -10,8 +10,23 @@ public class moveDanmuBall : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update() {
-        rb.velocity = transform.up * speedDanmuBall;
+    void FixedUpdate() {
+        transform.position = transform.position + transform.up * speedDanmuBall * Time.fixedDeltaTime;
     }
 
+    public float getSpeed() {
+        return this.speedDanmuBall;
+    }
+
+    public void setTowards(Vector3 v) {
+        rb.transform.up = v;
+    }
+
+    public void setSpeed(float speed) {
+        speedDanmuBall = speed;
+    }
+
+    public void setRotation(float deg) {
+        rb.transform.rotation = Quaternion.Euler(this.transform.forward * deg);
+    }
 }
