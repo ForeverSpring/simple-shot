@@ -11,10 +11,10 @@ public class controlPlayer : MonoBehaviour {
     void Update() {
         //低速模式显示判定点，高速模式隐藏判定点
         if (inLowSpeed) {
-            this.GetComponent<Renderer>().enabled = true;
+            GameObject.Find("DecisionPoint").GetComponent<Renderer>().enabled = true;
         }
         else {
-            this.GetComponent<Renderer>().enabled = false;
+            GameObject.Find("DecisionPoint").GetComponent<Renderer>().enabled = false;
         }
     }
 

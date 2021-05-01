@@ -21,24 +21,12 @@ public class GameControl : MonoBehaviour {
         rbBoss = gameobjBoss.GetComponent<Rigidbody>();
         //StartCoroutine(moveBoss());
         //StartCoroutine(FuKa());
-        StartCoroutine(danmuTest());
+        StartCoroutine(Fuka1());
     }
 
-
-    void Update() {
-
-    }
     //测试新的弹幕功能
     IEnumerator danmuTest() {
-        for(int j = 0; j < 10; j++) {
-            for (int i = 0; i < 36; i++) {
-                GameObject temp = Instantiate(gameobjDanmuBallReflect);
-                //temp.transform.position = vSpawnDanmuBall;
-                temp.transform.position = gameobjBoss.transform.position;
-                temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 10 * i);
-            }
-            yield return new WaitForSeconds(1.5f);
-        }
+
         yield return null;
     }
     //左右来回移动Boss
@@ -85,6 +73,63 @@ public class GameControl : MonoBehaviour {
             temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 10 * i);
             yield return new WaitForSeconds(0.1f);
         }
+        yield return null;
+    }
+
+
+    /// <summary>
+    /// 一面符卡
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator Fuka1() {
+        StartCoroutine(Fuka1_1());
+        yield return new WaitForSeconds(25f);
+        StartCoroutine(Fuka1_1());
+        yield return null;
+    }
+    //开幕雷击
+    IEnumerator Fuka1_1() {
+        //两波10发自机狙
+        for(int i = 0; i < 20; i++) {
+            GameObject temp = Instantiate(gameobjDanmuBall);
+            temp.transform.position = gameobjBoss.transform.position;
+            temp.GetComponent<moveDanmuBall>().setSpeed(15);
+            temp.transform.up = GameObject.Find("Player").transform.position - temp.transform.position;
+            yield return new WaitForSeconds(0.1f);
+        }
+        yield return new WaitForSeconds(1);
+        for (int i = 0; i < 20; i++) {
+            GameObject temp = Instantiate(gameobjDanmuBall);
+            temp.transform.position = gameobjBoss.transform.position;
+            temp.GetComponent<moveDanmuBall>().setSpeed(15);
+            temp.transform.up = GameObject.Find("Player").transform.position - temp.transform.position;
+            yield return new WaitForSeconds(0.1f);
+        }
+        yield return new WaitForSeconds(2);
+        //镜面反射弹幕
+        for(int i = 0; i < 15; i++) {
+            for (int j = 0; j < 10; j++) {
+                GameObject temp1 = Instantiate(gameobjDanmuBallReflect);
+                temp1.transform.position = gameobjBoss.transform.position;
+                temp1.transform.rotation = Quaternion.Euler(temp1.transform.forward * (115 - 2 * i));
+                temp1.GetComponent<moveDanmuBall>().setSpeed(20);
+                GameObject temp2 = Instantiate(gameobjDanmuBallReflect);
+                temp2.transform.position = gameobjBoss.transform.position;
+                temp2.transform.rotation = Quaternion.Euler(temp2.transform.forward * (245 + 2 * i));
+                temp2.GetComponent<moveDanmuBall>().setSpeed(20);
+                yield return new WaitForSeconds(0.05f);
+            }
+            yield return new WaitForSeconds(0.3f);
+        }
+    }
+    //
+    IEnumerator Fuka1_2() {
+
+        yield return null;
+    }
+    //
+    IEnumerator Fuka1_3() {
+
         yield return null;
     }
 }

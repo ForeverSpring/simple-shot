@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveDanmuBallReflect : moveDanmuBall {
-    private Rigidbody rb;
+    
     private int reflectTimes = 5;//反弹次数，防止水平循环反弹
     void Start() {
-        rb = GetComponent<Rigidbody>();
+
     }
 
     void FixedUpdate() {
