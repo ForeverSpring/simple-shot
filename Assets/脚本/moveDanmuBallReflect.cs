@@ -11,7 +11,7 @@ public class moveDanmuBallReflect : moveDanmuBall {
 
     void FixedUpdate() {
         transform.position = transform.position + transform.up * speedDanmuBall * Time.fixedDeltaTime;
-        if (reflectTimes > 0 && Boundary.isOut(transform.position)) {
+        if (reflectTimes > 0 && Boundary.IsOut(transform.position)) {
             transform.up = CheckPos();
             reflectTimes--;
         }
