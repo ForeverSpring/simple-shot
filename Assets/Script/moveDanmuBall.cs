@@ -17,7 +17,6 @@ public class moveDanmuBall : MonoBehaviour {
         if (isRotating) {
             transform.RotateAround(rotateCenter, Vector3.forward, (rotateSpeed * 180 / Mathf.PI) * Time.fixedDeltaTime);
         }
-        
     }
 
     public float GetSpeed() {

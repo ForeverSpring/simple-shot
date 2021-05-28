@@ -16,6 +16,7 @@ public class GameControl : MonoBehaviour {
     public GameObject gameobjBoss;
     private Rigidbody rbBoss;
     private Vector3 vSpawnDanmuBall = new Vector3(0f, 3f, 0f);
+    //TODO:添加互斥锁，让符卡在迭代器中顺序执行
 
     void Start() {
         rbBoss = gameobjBoss.GetComponent<Rigidbody>();
@@ -99,20 +100,21 @@ public class GameControl : MonoBehaviour {
     /// </summary>
     /// <returns></returns>
     IEnumerator Stage1() {
-        /*
-        StartCoroutine(Fuka1_1());
-        yield return new WaitForSeconds(25f);
-        StartCoroutine(Fuka1_2());
-        yield return new WaitForSeconds(48f);*/
-        StartCoroutine(Fuka1_3());
+        StartCoroutine(Fuka1_1());//50s
+        yield return new WaitForSeconds(50f);
+        StartCoroutine(Fuka1_2());//50s
+        yield return new WaitForSeconds(50f);
+        StartCoroutine(Fuka1_3());//50s
         yield return null;
     }
     //开幕雷击
     IEnumerator Fuka1_1() {
+        Debug.Log("Fuka1_1 start");
         bool run = true;
         int times = 0;
         //两波10发自机狙
         while (run) {
+            //两波自机狙
             for (int i = 0; i < 20; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 temp.transform.position = gameobjBoss.transform.position;
@@ -144,14 +146,18 @@ public class GameControl : MonoBehaviour {
                 }
                 yield return new WaitForSeconds(0.3f);
             }
+            yield return new WaitForSeconds(3f);
             times++;
             if (times == 2) {
                 run = false;
             }
         }
+        Debug.Log("Fuka1_1 end");
+        yield return null;
     }
     //鱼雷型集合的自机狙
     IEnumerator Fuka1_2() {
+        Debug.Log("Fuka1_2 start");
         float speedBoss = 5f;
         bool run = true;
         List<Vector3> moveLine = new List<Vector3> {
@@ -211,10 +217,12 @@ public class GameControl : MonoBehaviour {
                 run = false;
             }
         }
+        Debug.Log("Fuka1_2 finish");
         yield return null;
     }
     //自机狙加密集型随机弹
     IEnumerator Fuka1_3() {
+        Debug.Log("Fuka1_3 start");
         float speedBoss = 5f;
         rbBoss.velocity = new Vector3(0f, -1f, 0f) * speedBoss;
         yield return new WaitForSeconds(0.3f);
@@ -276,6 +284,7 @@ public class GameControl : MonoBehaviour {
             foreach (GameObject temp in lis) {
                 temp.GetComponent<moveDanmuBall>().SetSpeed(5);
             }
+            //弹幕旋转后变自机狙
             float r = 2f;
             List<GameObject> lis2 = new List<GameObject>();
             for (int i = 0; i < 10; i++) {
@@ -299,5 +308,6 @@ public class GameControl : MonoBehaviour {
             }
             yield return null;
         }
+        Debug.Log("Fuka1_3 end");
     }
 }

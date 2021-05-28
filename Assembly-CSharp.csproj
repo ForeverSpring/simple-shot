@@ -2,6 +2,9 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_rider_editor_plugin</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_rider_editor_plugin</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -60,12 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\脚本\controlPlayer.cs" />
-    <Compile Include="Assets\脚本\DestroyDanmu.cs" />
-    <Compile Include="Assets\脚本\GameControl.cs" />
-    <Compile Include="Assets\脚本\moveDanmuBall.cs" />
-    <Compile Include="Assets\脚本\moveDanmuBallReflect.cs" />
-    <Compile Include="Assets\脚本\判定点碰撞.cs" />
+    <Compile Include="Assets\Script\controlPlayer.cs" />
+    <Compile Include="Assets\Script\DestroyDanmu.cs" />
+    <Compile Include="Assets\Script\GameControl.cs" />
+    <Compile Include="Assets\Script\MenuControl.cs" />
+    <Compile Include="Assets\Script\moveDanmuBall.cs" />
+    <Compile Include="Assets\Script\moveDanmuBallReflect.cs" />
+    <Compile Include="Assets\Script\判定点碰撞.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/unity/simple shot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
