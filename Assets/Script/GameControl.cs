@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 static class Boundary {
-    public static float xMin = -10f, xMax = 10f, yMin = -4.7f, yMax = 4.7f;
+    public static float xMin = -5.85f, xMax = 1.9f, yMin = -4.56f, yMax = 4.56f;
     public static bool IsOut(Vector3 v) {
         if (v.x > xMin && v.x < xMax && v.y > yMin && v.y < yMax) {
             return false;
@@ -14,16 +15,86 @@ public class GameControl : MonoBehaviour {
     public GameObject gameobjDanmuBall;
     public GameObject gameobjDanmuBallReflect;
     public GameObject gameobjBoss;
+    public Text texPlayer, texBomb, texScore;
+    public AudioControl SeControl;
     private Rigidbody rbBoss;
     private Vector3 vSpawnDanmuBall = new Vector3(0f, 3f, 0f);
-    //TODO:添加互斥锁，让符卡在迭代器中顺序执行
+    private int numPlayer, numBomb, numScore;
+    private bool gameover;
+    private bool Pause;
+    private float PauseRate = 1.5f;
+    private float nextPause = 0f;
 
     void Start() {
+        SeControl.PlayBGM();
+        numPlayer = 5; numBomb = 3; numScore = 0;
+        gameover = false;
+        Pause = false;
+        UpdataText();
         rbBoss = gameobjBoss.GetComponent<Rigidbody>();
         //StartCoroutine(moveBoss());
         //StartCoroutine(FuKa());
         //StartCoroutine(DanmuTest());
         StartCoroutine(Stage1());
+    }
+
+    void Update() {
+        if (gameover) {
+            GameOver();
+        }
+        if (Input.GetKey(KeyCode.Escape) && !gameover && Time.unscaledTime >= nextPause) {
+            nextPause = Time.unscaledTime + PauseRate;
+            if (Pause) {
+                Time.timeScale = 1;
+                SeControl.PlayPause();
+                SeControl.PlayBGM();
+                Pause = false;
+            }
+            else {
+                Time.timeScale = 0;
+                SeControl.PlayPause();
+                SeControl.PauseBGM();
+                Pause = true;
+            }
+        }
+    }
+
+    void GameOver() {
+        //Debug.Log("GameOver!");
+        Time.timeScale = 0;
+        SeControl.StopBGM();
+    }
+
+    void UpdataText() {
+        texPlayer.text = "Player  " + numPlayer;
+        texBomb.text = "Bomb  " + numBomb;
+        texScore.text = "Score  " + numScore;
+    }
+
+    public bool hasBomb() {
+        return numBomb > 0;
+    }
+
+    public void useBomb() {
+        if (numBomb > 0) {
+            numBomb--;
+        }
+        UpdataText();
+    }
+
+    public void addScore(int score) {
+        numScore += score;
+        UpdataText();
+    }
+
+    public void PlayerBeShot() {
+        if (numPlayer > 0) {
+            numPlayer--;
+        }
+        else if (numPlayer == 0) {
+            gameover = true;
+        }
+        UpdataText();
     }
 
     //测试新的弹幕功能
@@ -100,8 +171,8 @@ public class GameControl : MonoBehaviour {
     /// </summary>
     /// <returns></returns>
     IEnumerator Stage1() {
-        StartCoroutine(Fuka1_1());//50s
-        yield return new WaitForSeconds(50f);
+        StartCoroutine(Fuka1_1());//38s
+        yield return new WaitForSeconds(40f);
         StartCoroutine(Fuka1_2());//50s
         yield return new WaitForSeconds(50f);
         StartCoroutine(Fuka1_3());//50s
@@ -132,16 +203,16 @@ public class GameControl : MonoBehaviour {
             }
             yield return new WaitForSeconds(2);
             //镜面反射弹幕
-            for (int i = 0; i < 15; i++) {
+            for (int i = 0; i < 10; i++) {
                 for (int j = 0; j < 10; j++) {
                     GameObject temp1 = Instantiate(gameobjDanmuBallReflect);
                     temp1.transform.position = gameobjBoss.transform.position;
                     temp1.transform.rotation = Quaternion.Euler(temp1.transform.forward * (115 - 2 * i));
-                    temp1.GetComponent<moveDanmuBall>().SetSpeed(20);
+                    temp1.GetComponent<moveDanmuBall>().SetSpeed(15);
                     GameObject temp2 = Instantiate(gameobjDanmuBallReflect);
                     temp2.transform.position = gameobjBoss.transform.position;
                     temp2.transform.rotation = Quaternion.Euler(temp2.transform.forward * (245 + 2 * i));
-                    temp2.GetComponent<moveDanmuBall>().SetSpeed(20);
+                    temp2.GetComponent<moveDanmuBall>().SetSpeed(15);
                     yield return new WaitForSeconds(0.05f);
                 }
                 yield return new WaitForSeconds(0.3f);
@@ -158,7 +229,7 @@ public class GameControl : MonoBehaviour {
     //鱼雷型集合的自机狙
     IEnumerator Fuka1_2() {
         Debug.Log("Fuka1_2 start");
-        float speedBoss = 5f;
+        float speedBoss = 3f;
         bool run = true;
         List<Vector3> moveLine = new List<Vector3> {
             //一次循环的4个移动方向
@@ -189,6 +260,7 @@ public class GameControl : MonoBehaviour {
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 36 * i);
             }
             yield return new WaitForSeconds(0.2f);
+            float speed_round = 5f;
             foreach (GameObject temp in lis) {
                 temp.GetComponent<moveDanmuBallReflect>().SetSpeed(0);
             }
@@ -197,10 +269,10 @@ public class GameControl : MonoBehaviour {
             }
             yield return new WaitForSeconds(0.3f);
             foreach (GameObject temp in lis) {
-                temp.GetComponent<moveDanmuBallReflect>().SetSpeed(10);
+                temp.GetComponent<moveDanmuBallReflect>().SetSpeed(speed_round);
                 temp.transform.up = GameObject.Find("Player").transform.position - rbBoss.transform.position;
             }
-            for (int i = 0; i < 30; i++) {
+            for (int i = 0; i < 60; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(3 + Random.Range(0f, 3f));
@@ -208,7 +280,7 @@ public class GameControl : MonoBehaviour {
             }
             yield return new WaitForSeconds(1f);
             foreach (GameObject temp in lis2) {
-                temp.GetComponent<moveDanmuBallReflect>().SetSpeed(10);
+                temp.GetComponent<moveDanmuBallReflect>().SetSpeed(speed_round);
                 temp.transform.up = GameObject.Find("Player").transform.position - rbBoss.transform.position;
             }
             yield return new WaitForSeconds(1f);
@@ -223,7 +295,7 @@ public class GameControl : MonoBehaviour {
     //自机狙加密集型随机弹
     IEnumerator Fuka1_3() {
         Debug.Log("Fuka1_3 start");
-        float speedBoss = 5f;
+        float speedBoss = 3f;
         rbBoss.velocity = new Vector3(0f, -1f, 0f) * speedBoss;
         yield return new WaitForSeconds(0.3f);
         rbBoss.velocity = new Vector3(0f, 0f, 0f);
@@ -252,7 +324,7 @@ public class GameControl : MonoBehaviour {
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 lis.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
-                temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+                temp.transform.localScale = temp.transform.localScale * 0.5f;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(3);
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 72 * i);
             }
@@ -265,7 +337,7 @@ public class GameControl : MonoBehaviour {
                     GameObject temp1 = Instantiate(gameobjDanmuBall);
                     lis1.Add(temp1);
                     temp1.transform.position = temp.transform.position;
-                    temp1.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+                    temp1.transform.localScale = temp.transform.localScale;
                     temp1.GetComponent<moveDanmuBall>().SetSpeed(3);
                     temp1.transform.rotation = Quaternion.Euler(temp.transform.forward * 9 * i);
                 }
@@ -297,7 +369,7 @@ public class GameControl : MonoBehaviour {
             }
             yield return new WaitForSeconds(1f);
             foreach (GameObject temp in lis2) {
-                temp.GetComponent<moveDanmuBall>().SetSpeed(10);
+                temp.GetComponent<moveDanmuBall>().SetSpeed(8);
                 temp.GetComponent<moveDanmuBall>().isRotating = false;
                 temp.transform.up = GameObject.Find("Player").transform.position - temp.transform.position;
                 yield return new WaitForSeconds(0.1f);

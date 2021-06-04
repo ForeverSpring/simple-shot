@@ -3,10 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class controlPlayer : MonoBehaviour {
-    private float speedPlayerMove1 = 9;
-    private float speedPlayerMove2 = 4.5f;
+    private float speedPlayerMove1 = 5.8f;
+    private float speedPlayerMove2 = 3.1f;
     private Rigidbody rb;
     private bool inLowSpeed;
+    private bool FlagBomb = true;
+    public float TimePerBomb = 5f;
+    public GameControl Control;
+    public GameObject VfxBomb;
+    public 判定点碰撞 DecisionPoint;
+    public AudioSource audBomb;
+
+    IEnumerator UseBomb() {
+        FlagBomb = false;
+        //有B并且不在无敌状态可以使用B
+        if (Control.hasBomb() && !DecisionPoint.isMuteki()) {
+            audBomb.Play();
+            Control.useBomb();
+            DecisionPoint.SetMutekiTime(TimePerBomb);
+            GameObject tempVfx=Instantiate(VfxBomb, rb.transform);
+            yield return new WaitForSeconds(TimePerBomb);
+            Destroy(tempVfx);
+        }
+        FlagBomb = true;
+        yield return null;
+    }
 
     void Update() {
         //低速模式显示判定点，高速模式隐藏判定点
@@ -38,6 +59,11 @@ public class controlPlayer : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.RightArrow)) {
             moveHorizontal = 1;
+        }
+        if (Input.GetKey(KeyCode.Z)) {
+            if (FlagBomb) {
+                StartCoroutine(UseBomb());
+            }
         }
         if (Input.GetKey(KeyCode.LeftShift)) {
             moveSpeed = speedPlayerMove2;
