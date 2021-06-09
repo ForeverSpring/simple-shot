@@ -12,30 +12,47 @@ static class Boundary {
     }
 }
 public class GameControl : MonoBehaviour {
-    public GameObject gameobjDanmuBall;
-    public GameObject gameobjDanmuBallReflect;
+    public GameObject gameobjDanmuBall, gameobjDanmuBallReflect;
     public GameObject gameobjBoss;
-    public Text texPlayer, texBomb, texScore;
+    public Text texPlayer, texBomb, texScore, texFukaName;
+    public texStage textStage;
     public AudioControl SeControl;
+    public AudioSource BossRayShot;
+    public AudioSource BossTan01;
     private Rigidbody rbBoss;
     private Vector3 vSpawnDanmuBall = new Vector3(0f, 3f, 0f);
-    private int numPlayer, numBomb, numScore;
+    public int numPlayer, numBomb, numScore;
     private bool gameover;
     private bool Pause;
+    private bool isRuningFuka;
+    private bool BreakFuka;
     private float PauseRate = 1.5f;
     private float nextPause = 0f;
+    private int posFuka;
+    List<string> arrFukaName = new List<string>();//协程名
 
-    void Start() {
+    //数据初始化
+    void InitialSet() {
+        arrFukaName.Add("Stage1");
+        arrFukaName.Add("Fuka1_1");
+        arrFukaName.Add("Fuka1_2");
+        arrFukaName.Add("Fuka1_3");
         SeControl.PlayBGM();
+        posFuka = -1;
         numPlayer = 5; numBomb = 3; numScore = 0;
+        BreakFuka = false;
         gameover = false;
+        isRuningFuka = false;
         Pause = false;
         UpdataText();
         rbBoss = gameobjBoss.GetComponent<Rigidbody>();
+    }
+
+    void Start() {
+        InitialSet();
         //StartCoroutine(moveBoss());
         //StartCoroutine(FuKa());
         //StartCoroutine(DanmuTest());
-        StartCoroutine(Stage1());
     }
 
     void Update() {
@@ -57,6 +74,18 @@ public class GameControl : MonoBehaviour {
                 Pause = true;
             }
         }
+        //协程顺序依次执行
+        if (!isRuningFuka) {
+            if (posFuka < arrFukaName.Capacity) {
+                posFuka++;
+                StartCoroutine(arrFukaName[posFuka]);
+            }
+        }
+        //符卡被击破时中断符卡协程
+        if (BreakFuka) {
+            StopCoroutine(arrFukaName[posFuka]);
+            isRuningFuka = false;
+        }
     }
 
     void GameOver() {
@@ -65,28 +94,27 @@ public class GameControl : MonoBehaviour {
         SeControl.StopBGM();
     }
 
+    /// <summary>
+    /// 数据操作函数
+    /// </summary>
     void UpdataText() {
         texPlayer.text = "Player  " + numPlayer;
         texBomb.text = "Bomb  " + numBomb;
         texScore.text = "Score  " + numScore;
     }
-
     public bool hasBomb() {
         return numBomb > 0;
     }
-
     public void useBomb() {
         if (numBomb > 0) {
             numBomb--;
         }
         UpdataText();
     }
-
     public void addScore(int score) {
         numScore += score;
         UpdataText();
     }
-
     public void PlayerBeShot() {
         if (numPlayer > 0) {
             numPlayer--;
@@ -169,32 +197,34 @@ public class GameControl : MonoBehaviour {
     /// <summary>
     /// 一面符卡
     /// </summary>
-    /// <returns></returns>
     IEnumerator Stage1() {
-        StartCoroutine(Fuka1_1());//38s
-        yield return new WaitForSeconds(40f);
-        StartCoroutine(Fuka1_2());//50s
-        yield return new WaitForSeconds(50f);
-        StartCoroutine(Fuka1_3());//50s
-        yield return null;
+        isRuningFuka = true;
+        textStage.setText("Stage 1");
+        textStage.printStage();
+        yield return new WaitForSeconds(textStage.timeFull);
+        isRuningFuka = false;
     }
     //开幕雷击
     IEnumerator Fuka1_1() {
+        isRuningFuka = true;
         Debug.Log("Fuka1_1 start");
         bool run = true;
         int times = 0;
         //两波10发自机狙
         while (run) {
+            yield return new WaitForSeconds(3f);
             //两波自机狙
             for (int i = 0; i < 20; i++) {
+                BossTan01.Play();
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(15);
                 temp.transform.up = GameObject.Find("Player").transform.position - temp.transform.position;
                 yield return new WaitForSeconds(0.1f);
             }
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1f);
             for (int i = 0; i < 20; i++) {
+                BossTan01.Play();
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(15);
@@ -204,6 +234,7 @@ public class GameControl : MonoBehaviour {
             yield return new WaitForSeconds(2);
             //镜面反射弹幕
             for (int i = 0; i < 10; i++) {
+                BossRayShot.Play();
                 for (int j = 0; j < 10; j++) {
                     GameObject temp1 = Instantiate(gameobjDanmuBallReflect);
                     temp1.transform.position = gameobjBoss.transform.position;
@@ -224,10 +255,12 @@ public class GameControl : MonoBehaviour {
             }
         }
         Debug.Log("Fuka1_1 end");
+        isRuningFuka = false;
         yield return null;
     }
     //鱼雷型集合的自机狙
     IEnumerator Fuka1_2() {
+        isRuningFuka = true;
         Debug.Log("Fuka1_2 start");
         float speedBoss = 3f;
         bool run = true;
@@ -290,10 +323,12 @@ public class GameControl : MonoBehaviour {
             }
         }
         Debug.Log("Fuka1_2 finish");
+        isRuningFuka = false;
         yield return null;
     }
     //自机狙加密集型随机弹
     IEnumerator Fuka1_3() {
+        isRuningFuka = true;
         Debug.Log("Fuka1_3 start");
         float speedBoss = 3f;
         rbBoss.velocity = new Vector3(0f, -1f, 0f) * speedBoss;
@@ -362,7 +397,8 @@ public class GameControl : MonoBehaviour {
             for (int i = 0; i < 10; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 lis2.Add(temp);
-                temp.transform.position = gameobjBoss.transform.position + new Vector3(r * Mathf.Cos(36 * i * Mathf.PI / 180), r * Mathf.Sin(36 * i * Mathf.PI / 180), 0f);
+                temp.transform.position = gameobjBoss.transform.position +
+                new Vector3(r * Mathf.Cos(36 * i * Mathf.PI / 180), r * Mathf.Sin(36 * i * Mathf.PI / 180), 0f);
                 temp.GetComponent<moveDanmuBall>().SetRotateCenter(gameobjBoss.transform.position);
                 temp.GetComponent<moveDanmuBall>().isRotating = true;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(0);
@@ -380,6 +416,7 @@ public class GameControl : MonoBehaviour {
             }
             yield return null;
         }
+        isRuningFuka = false;
         Debug.Log("Fuka1_3 end");
     }
 }

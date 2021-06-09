@@ -70,6 +70,7 @@
     <Compile Include="Assets\Script\MenuControl.cs" />
     <Compile Include="Assets\Script\moveDanmuBall.cs" />
     <Compile Include="Assets\Script\moveDanmuBallReflect.cs" />
+    <Compile Include="Assets\Script\texStage.cs" />
     <Compile Include="Assets\Script\判定点碰撞.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/unity/simple shot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
