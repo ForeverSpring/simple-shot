@@ -45,6 +45,7 @@ public class controlPlayer : MonoBehaviour {
     }
 
     void FixedUpdate() {
+        //TODO:设置自定义按键
         float moveHorizontal = 0;
         float moveVertical = 0;
         float moveSpeed = speedPlayerMove1;
@@ -81,13 +82,11 @@ public class controlPlayer : MonoBehaviour {
         else {
             movement = new Vector3(0f, 0f, 0f);
         }
-        rb.velocity = movement * moveSpeed;
-        //TODO：修改边界的反弹错误
-        //transform.position = transform.position + movement * moveSpeed * Time.fixedDeltaTime;
+        rb.position = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
 
         //限制坐标在边界内
-        rb.position = new Vector3(Mathf.Clamp(rb.position.x, Boundary.xMin, Boundary.xMax),
-        Mathf.Clamp(rb.position.y, Boundary.yMin, Boundary.yMax),
-        0.0f);
+        rb.position = new Vector3(  Mathf.Clamp(rb.position.x, Boundary.xMin, Boundary.xMax),
+                                    Mathf.Clamp(rb.position.y, Boundary.yMin, Boundary.yMax),
+                                    0.0f    );
     }
 }
