@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class moveDanmuBallReflect : moveDanmuBall {
     
-    private int reflectTimes = 5;//反弹次数，防止水平循环反弹
+    private int reflectTimes = 5;//反弹次数
     void Start() {
 
     }

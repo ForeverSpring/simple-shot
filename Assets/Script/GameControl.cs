@@ -14,7 +14,6 @@ static class Boundary {
 public class GameControl : MonoBehaviour {
     public GameObject FukaManager;
     public Text texPlayer, texBomb, texScore, texFukaName;
-    public texStage textStage;
     public AudioControl SeControl;
     public AudioSource BossRayShot;
     public AudioSource BossTan01;
@@ -26,12 +25,10 @@ public class GameControl : MonoBehaviour {
     private float PauseRate = 1.5f;
     private float nextPause = 0f;
     private int posFuka;
-    List<string> arrFukaName = new List<string>();//协程名
     List<Fuka> arrFuka = new List<Fuka>();//协程名
 
     //数据初始化
     void InitialSet() {
-        arrFukaName.Add("Stage1");
         SeControl.PlayBGM();
         posFuka = -1;
         numPlayer = 5; numBomb = 3; numScore = 0;
@@ -40,16 +37,14 @@ public class GameControl : MonoBehaviour {
         isRuningFuka = false;
         Pause = false;
         UpdataText();
+        arrFuka.Add(FukaManager.GetComponent<Fuka1_3>());
+        arrFuka.Add(FukaManager.GetComponent<Stage1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_2>());
-        arrFuka.Add(FukaManager.GetComponent<Fuka1_3>());
     }
 
     void Start() {
         InitialSet();
-        //StartCoroutine(moveBoss());
-        //StartCoroutine(FuKa());
-        //StartCoroutine(DanmuTest());
     }
 
     void Update() {
@@ -73,7 +68,7 @@ public class GameControl : MonoBehaviour {
         }
         //协程顺序依次执行
         if (!isRuningFuka) {
-            if (posFuka < arrFukaName.Capacity) {
+            if (posFuka < arrFuka.Capacity) {
                 posFuka++;
                 arrFuka[posFuka].Run();
                 Debug.Log(posFuka + ":" + arrFuka[posFuka].name);
@@ -123,21 +118,12 @@ public class GameControl : MonoBehaviour {
         }
         UpdataText();
     }
+    //协程顺序执行互斥锁
     public void WaitFuka() {
         isRuningFuka = true;
     }
     public void SignalFuka() {
         isRuningFuka = false;
     }
-
-    /// <summary>
-    /// 一面符卡
-    /// </summary>
-    IEnumerator Stage1() {
-        isRuningFuka = true;
-        textStage.setText("Stage 1");
-        textStage.printStage();
-        yield return new WaitForSeconds(textStage.timeFull);
-        isRuningFuka = false;
-    }
+    
 }
