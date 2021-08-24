@@ -11,7 +11,7 @@ static class Boundary {
         return true;
     }
 }
-public class GameControl : MonoBehaviour {
+public class GameControl : Singleton<GameControl> {
     public GameObject FukaManager;
     public Text texPlayer, texBomb, texScore, texFukaName;
     public AudioControl SeControl;
@@ -37,13 +37,13 @@ public class GameControl : MonoBehaviour {
         isRuningFuka = false;
         Pause = false;
         UpdataText();
-        arrFuka.Add(FukaManager.GetComponent<Fuka1_3>());
         arrFuka.Add(FukaManager.GetComponent<Stage1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_2>());
+        arrFuka.Add(FukaManager.GetComponent<Fuka1_3>());
     }
 
-    void Start() {
+    private void Start() {
         InitialSet();
     }
 

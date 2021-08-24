@@ -1,47 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.InputSystem;
-[CreateAssetMenu(menuName = "Player Input")]//可以直接在Project右键创建
-public class PlayerInput : ScriptableObject, InputActions.IGamePlayActions {
-    public event UnityAction<Vector2> onMove = delegate { };
-    public event UnityAction onStopMove = delegate { };
-    public event UnityAction onLowSpeed = delegate { };
-    public event UnityAction onNormalSpeed = delegate { };
-    InputActions InputActions;
-    void OnEnable() {
-        InputActions = new InputActions();
-        InputActions.GamePlay.SetCallbacks(this);
+
+public class PlayerInput : Singleton<PlayerInput>
+{
+    float moveHorizontal = 0;
+    float moveVertical = 0;
+    bool signalBomb = false;
+    bool signalLowSpeed = false;
+    void Start() {
+        Reset();
     }
 
-    void OnDisable() {
-        DisableAllInputs();
-    }
-
-    public void EnableGameplayInput() {
-        InputActions.GamePlay.Enable();
-    }
-
-    public void DisableAllInputs() {
-        InputActions.GamePlay.Disable();
-    }
-
-    public void OnMove(InputAction.CallbackContext context) {
-        if (context.phase == InputActionPhase.Performed) {
-            onMove.Invoke(context.ReadValue<Vector2>());
+    void FixedUpdate()
+    {
+        Reset();
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            moveVertical = 1;
         }
-        if (context.phase == InputActionPhase.Canceled) {
-            onStopMove.Invoke();
+        if (Input.GetKey(KeyCode.DownArrow)) {
+            moveVertical = -1;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow)) {
+            moveHorizontal = -1;
+        }
+        if (Input.GetKey(KeyCode.RightArrow)) {
+            moveHorizontal = 1;
+        }
+        if (Input.GetKey(KeyCode.Z)) {
+            signalBomb = true;
+        }
+        if (Input.GetKey(KeyCode.LeftShift)) {
+            signalLowSpeed = true;
         }
     }
 
-    public void OnLowSpeed(InputAction.CallbackContext context) {
-        if (context.phase == InputActionPhase.Performed) {
-            onLowSpeed.Invoke();
-        }
-        if (context.phase == InputActionPhase.Canceled) {
-            onNormalSpeed.Invoke();
-        }
+    public void GetInputSingal(ref float _moveH, ref float _moveV, ref bool _signalBomb, ref bool _signalLowSpeed) {
+        _moveH = this.moveHorizontal;
+        _moveV = this.moveVertical;
+        _signalBomb = this.signalBomb;
+        _signalLowSpeed = this.signalLowSpeed;
+    }
+
+    public void Reset() {
+        moveHorizontal = 0;
+        moveVertical = 0;
+        signalBomb = false;
+        signalLowSpeed = false;
     }
 }

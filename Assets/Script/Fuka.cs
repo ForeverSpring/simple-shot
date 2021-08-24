@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class Fuka : MonoBehaviour
 {
-    public GameControl mainControl;
     public GameObject gameobjBoss;
     public GameObject gameobjDanmuBall;
     public GameObject gameobjDanmuBallReflect;
@@ -17,7 +16,6 @@ public abstract class Fuka : MonoBehaviour
     //TODO:符卡类面向对象
 
     void Awake() {
-        mainControl = GameObject.Find("GameControl").GetComponent<GameControl>();
         gameobjBoss = GameObject.Find("Boss");
         gameobjDanmuBall = (GameObject)Resources.Load("Prefab/danmuBall");
         gameobjDanmuBallReflect = (GameObject)Resources.Load("Prefab/danmuBallReflect");

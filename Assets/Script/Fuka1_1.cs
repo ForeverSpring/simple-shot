@@ -16,7 +16,7 @@ public class Fuka1_1 : Fuka
     }
 
     IEnumerator _Fuka1_1() {
-        mainControl.WaitFuka();
+        GameControl.Instance.WaitFuka();
         Debug.Log("Fuka1_1 start");
         bool run = true;
         int times = 0;
@@ -65,7 +65,7 @@ public class Fuka1_1 : Fuka
             }
         }
         Debug.Log("Fuka1_1 end");
-        mainControl.SignalFuka();
+        GameControl.Instance.SignalFuka();
         yield return null;
     }
 }

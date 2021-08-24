@@ -16,7 +16,7 @@ public class Fuka1_3 : Fuka {
     }
 
     IEnumerator _Fuka1_3() {
-        mainControl.WaitFuka();
+        GameControl.Instance.WaitFuka();
         Debug.Log("Fuka1_3 start");
         float speedBoss = 3f;
         rbBoss.velocity = new Vector3(0f, -1f, 0f) * speedBoss;
@@ -104,7 +104,7 @@ public class Fuka1_3 : Fuka {
             }
             yield return null;
         }
-        mainControl.SignalFuka();
+        GameControl.Instance.SignalFuka();
         Debug.Log("Fuka1_3 end");
     }
 }

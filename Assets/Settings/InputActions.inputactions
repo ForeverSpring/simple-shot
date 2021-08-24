@@ -15,9 +15,9 @@
                 },
                 {
                     "name": "LowSpeed",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "97f5ff09-127c-48b0-ba62-a9b3f324b895",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -102,11 +102,11 @@
                 },
                 {
                     "name": "",
-                    "id": "4e899a5b-f342-4ba8-8e51-d08ad473cba6",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "Hold",
+                    "id": "8f33f00e-a359-47d4-84d1-3160e4f7915f",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "PC",
                     "action": "LowSpeed",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -114,5 +114,17 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "PC",
+            "bindingGroup": "PC",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

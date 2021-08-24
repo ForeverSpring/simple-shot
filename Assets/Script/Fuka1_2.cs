@@ -16,7 +16,7 @@ public class Fuka1_2 : Fuka {
     }
 
     IEnumerator _Fuka1_2() {
-        mainControl.WaitFuka();
+        GameControl.Instance.WaitFuka();
         Debug.Log("Fuka1_2 start");
         float speedBoss = 3f;
         bool run = true;
@@ -79,7 +79,7 @@ public class Fuka1_2 : Fuka {
             }
         }
         Debug.Log("Fuka1_2 finish");
-        mainControl.SignalFuka();
+        GameControl.Instance.SignalFuka();
         yield return null;
     }
 }

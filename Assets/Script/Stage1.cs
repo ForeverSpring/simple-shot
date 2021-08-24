@@ -19,10 +19,10 @@ public class Stage1 : Fuka {
     /// Ò»Ãæ·û¿¨
     /// </summary>
     IEnumerator _Stage1() {
-        mainControl.WaitFuka();
+        GameControl.Instance.WaitFuka();
         textStage.setText("Stage 1");
         textStage.printStage();
         yield return new WaitForSeconds(textStage.timeFull);
-        mainControl.SignalFuka();
+        GameControl.Instance.SignalFuka();
     }
 }
