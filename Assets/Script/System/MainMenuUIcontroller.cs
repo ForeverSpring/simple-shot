@@ -28,4 +28,32 @@ public class MainMenuUIcontroller : MonoBehaviour
         mMainMenu.gameObject.SetActive(true);
         mOption.gameObject.SetActive(false);
     }
+
+    //Button of MainMenu
+    public void BtnMainStartClicked() {
+        SceneLoader.Instance.LoadGamePlayScene();
+    }
+    public void BtnMainOptionClicked() {
+        EnterOption();
+    }
+    public void BtnMainExitClicked() {
+        SceneLoader.Instance.ExitGame();
+    }
+    //Button of OptionMenu
+    public void BtnOptionBGMVolumeClicked() {
+        AudioControl.Instance.UpdateBGMVolume();
+        AudioControl.Instance.UpdateSettings();
+    }
+    public void BtnOptionSEVolumeClicked() {
+        AudioControl.Instance.UpdateSEVolume();
+        AudioControl.Instance.UpdateSettings();
+    }
+    public void BtnOptionDefaultClicked() {
+        AudioControl.Instance.InitSettings();
+        AudioControl.Instance.UpdateSettings();
+    }
+    public void BtnOptionQuitClicked() {
+        AudioControl.Instance.UpdateSettings();
+        EnterMainMenu();
+    }
 }

@@ -490,7 +490,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1772961157}
+      objectReference: {fileID: 577933223}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -499,12 +499,12 @@ PrefabInstance:
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateSettings
+      value: BtnOptionBGMVolumeClicked
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AudioControl, Assembly-CSharp
+      value: MainMenuUIcontroller, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
@@ -927,7 +927,7 @@ PrefabInstance:
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EnterOption
+      value: BtnMainOptionClicked
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
@@ -1780,7 +1780,7 @@ PrefabInstance:
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EnterMainMenu
+      value: BtnOptionQuitClicked
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
@@ -2401,6 +2401,41 @@ PrefabInstance:
       propertyPath: m_Navigation.m_WrapAround
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 577933223}
+    - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BtnOptionDefaultClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuUIcontroller, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667254, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_Name
@@ -2929,7 +2964,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1772961157}
+      objectReference: {fileID: 577933223}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2938,12 +2973,12 @@ PrefabInstance:
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateSettings
+      value: BtnOptionSEVolumeClicked
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AudioControl, Assembly-CSharp
+      value: MainMenuUIcontroller, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
@@ -3643,7 +3678,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 577933221}
+      objectReference: {fileID: 577933223}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -3652,12 +3687,12 @@ PrefabInstance:
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
+      value: BtnMainExitClicked
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneLoader, Assembly-CSharp
+      value: MainMenuUIcontroller, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
@@ -3921,7 +3956,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 577933221}
+      objectReference: {fileID: 577933223}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -3930,12 +3965,12 @@ PrefabInstance:
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadGamePlayScene
+      value: BtnMainStartClicked
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneLoader, Assembly-CSharp
+      value: MainMenuUIcontroller, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1696823438969667240, guid: 5dedd2861b7190f489d2a80bb9289c17,
         type: 3}

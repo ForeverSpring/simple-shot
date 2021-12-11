@@ -61,6 +61,7 @@
     <Compile Include="Assets\Script\UI\texStage.cs" />
     <Compile Include="Assets\Script\GameStage\Stage1.cs" />
     <Compile Include="Assets\Script\Bullet\moveDanmuBallReflect.cs" />
+    <Compile Include="Assets\Script\System\PresistentSingleton.cs" />
     <Compile Include="Assets\Script\System\MainMenuUIcontroller.cs" />
     <Compile Include="Assets\Script\Player\controlPlayer.cs" />
     <Compile Include="Assets\Script\UI\MenuControl.cs" />
@@ -75,7 +76,7 @@
     <Compile Include="Assets\Script\DestroyDanmu.cs" />
     <Compile Include="Assets\Script\System\SceneLoader.cs" />
     <Compile Include="Assets\Script\System\AudioControl.cs" />
-    <Compile Include="Assets\Script\System\PresistentSingleton.cs" />
+    <Compile Include="Assets\GameUIControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

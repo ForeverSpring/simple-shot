@@ -13,7 +13,7 @@ public class AudioControl : PresistentSingleton<AudioControl>
     private void Start() {
         InitSettings();
     }
-    private void InitSettings() {
+    public void InitSettings() {
         mBGMVolume = 1f;
         mSEVolume = 1f;
     }
@@ -39,7 +39,9 @@ public class AudioControl : PresistentSingleton<AudioControl>
     public void UpdateSettings() {
         Debug.Log("Update Options");
         mSeBGM.volume = mBGMVolume;
-        mSePause.volume = mBGMVolume;
+        mSePause.volume = mSEVolume;
+        GameObject.Find("SliderBGMVolume").GetComponent<Slider>().value = mBGMVolume;
+        GameObject.Find("SliderSEVolume").GetComponent<Slider>().value = mSEVolume;
     }
     public void PlayPause() {
         mSePause.Play();

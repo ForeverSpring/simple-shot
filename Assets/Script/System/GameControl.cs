@@ -27,7 +27,9 @@ public class GameControl : Singleton<GameControl> {
     List<Fuka> arrFuka = new List<Fuka>();//协程名
 
     //数据初始化
-    void InitialSet() {
+    public void InitialSet() {
+        Time.timeScale = 1;
+        AudioControl.Instance.StopBGM();
         AudioControl.Instance.PlayBGM();
         posFuka = -1;
         numPlayer = 5; numBomb = 3; numScore = 0;
@@ -50,19 +52,14 @@ public class GameControl : Singleton<GameControl> {
         if (gameover) {
             GameOver();
         }
+        //TODO: Refacor system of game process  EXAMPLE: updateProcess()
         if (Input.GetKey(KeyCode.Escape) && !gameover && Time.unscaledTime >= nextPause) {
             nextPause = Time.unscaledTime + PauseRate;
             if (Pause) {
-                Time.timeScale = 1;
-                AudioControl.Instance.PlayPause();
-                AudioControl.Instance.PlayBGM();
-                Pause = false;
+                ReturnGame();
             }
             else {
-                Time.timeScale = 0;
-                AudioControl.Instance.PlayPause();
-                AudioControl.Instance.PauseBGM();
-                Pause = true;
+                PauseGame();
             }
         }
         //协程顺序依次执行
@@ -80,6 +77,21 @@ public class GameControl : Singleton<GameControl> {
         }
     }
 
+    public void PauseGame() {
+        Pause = true;
+        Time.timeScale = 0;
+        GameUIControl.Instance.EnterPause();
+        AudioControl.Instance.PlayPause();
+        AudioControl.Instance.PauseBGM();
+    }
+
+    public void ReturnGame() {
+        Pause = false;
+        Time.timeScale = 1;
+        GameUIControl.Instance.ExitPause();
+        AudioControl.Instance.PlayPause();
+        AudioControl.Instance.PlayBGM();
+    }
     void GameOver() {
         //Debug.Log("GameOver!");
         Time.timeScale = 0;
