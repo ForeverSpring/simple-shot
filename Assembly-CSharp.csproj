@@ -56,25 +56,26 @@
     <UnityVersion>2020.3.16f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Fuka1_2.cs" />
+    <Compile Include="Assets\Script\GameStage\Fuka1_2.cs" />
     <Compile Include="Assets\Script\Input\PlayerInput.cs" />
-    <Compile Include="Assets\Script\texStage.cs" />
-    <Compile Include="Assets\Script\Stage1.cs" />
-    <Compile Include="Assets\Script\moveDanmuBallReflect.cs" />
-    <Compile Include="Assets\Script\controlPlayer.cs" />
-    <Compile Include="Assets\Script\MenuControl.cs" />
-    <Compile Include="Assets\Script\Fuka1_3.cs" />
-    <Compile Include="Assets\Script\GameControl.cs" />
-    <Compile Include="Assets\Script\SystemModules\Singleton.cs" />
-    <Compile Include="Assets\Script\判定点碰撞.cs" />
-    <Compile Include="Assets\Script\moveDanmuBall.cs" />
-    <Compile Include="Assets\Script\Fuka.cs" />
-    <Compile Include="Assets\Script\SystemModules\ViewPort.cs" />
-    <Compile Include="Assets\Script\Fuka1_1.cs" />
+    <Compile Include="Assets\Script\UI\texStage.cs" />
+    <Compile Include="Assets\Script\GameStage\Stage1.cs" />
+    <Compile Include="Assets\Script\Bullet\moveDanmuBallReflect.cs" />
+    <Compile Include="Assets\Script\System\MainMenuUIcontroller.cs" />
+    <Compile Include="Assets\Script\Player\controlPlayer.cs" />
+    <Compile Include="Assets\Script\UI\MenuControl.cs" />
+    <Compile Include="Assets\Script\GameStage\Fuka1_3.cs" />
+    <Compile Include="Assets\Script\System\GameControl.cs" />
+    <Compile Include="Assets\Script\System\Singleton.cs" />
+    <Compile Include="Assets\Script\Player\判定点碰撞.cs" />
+    <Compile Include="Assets\Script\Bullet\moveDanmuBall.cs" />
+    <Compile Include="Assets\Script\GameStage\Fuka.cs" />
+    <Compile Include="Assets\Script\System\ViewPort.cs" />
+    <Compile Include="Assets\Script\GameStage\Fuka1_1.cs" />
     <Compile Include="Assets\Script\DestroyDanmu.cs" />
-    <Compile Include="Assets\Script\AudioControl.cs" />
-    <Compile Include="Assets\Script\SystemModules\SceneLoader.cs" />
-    <Compile Include="Assets\Script\SystemModules\MainMenuUIcontroller.cs" />
+    <Compile Include="Assets\Script\System\SceneLoader.cs" />
+    <Compile Include="Assets\Script\System\AudioControl.cs" />
+    <Compile Include="Assets\Script\System\PresistentSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
