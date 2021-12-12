@@ -5,9 +5,13 @@ using UnityEngine;
 public class Fuka1_2 : Fuka {
     void Start() {
         name = "鱼雷型集合的自机狙";
+        type = FukaType.LifeFuka;
     }
 
     public override void Run() {
+        GameUIControl.Instance.SetTopSlideVisiable(true);
+        FukaProcess.Instance.SetNewProcessData(200);
+        FukaProcess.Instance.UpdateProcess();
         StartCoroutine(_Fuka1_2());
     }
 

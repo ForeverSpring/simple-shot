@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class GameUIControl : Singleton<GameUIControl>
 {
-    public GameObject CanvasPause;
+    private GameObject CanvasPause;
+    private Slider TopProcessSlider;
+    private Vector3 TopSliderPos;
     public void Start() {
         InitGameUI();
     }
 
     public void InitGameUI() {
+        TopProcessSlider = GameObject.Find("GameProcess").GetComponent<Slider>();
+        TopSliderPos = TopProcessSlider.transform.position;
         CanvasPause = GameObject.Find("CanvasPause");
         CanvasPause.SetActive(false);
     }
@@ -22,7 +26,19 @@ public class GameUIControl : Singleton<GameUIControl>
     public void ExitPause() {
         CanvasPause.SetActive(false);
     }
-
+    public void SetTopSlideVisiable(bool visiable) {
+        if (visiable) {
+            Debug.Log("set slider can be see");
+            TopProcessSlider.transform.position = TopSliderPos;
+        }
+        else {
+            Debug.Log("set slider can not be see");
+            TopProcessSlider.transform.position = TopSliderPos + new Vector3(0f, 1000f, 0f);
+        }
+    }
+    public void UpdateTopSlide(float aValue) {
+        TopProcessSlider.value = aValue;
+    }
     //Button Pause
     public void BtnPauseReturnGameClicked() {
         ExitPause();

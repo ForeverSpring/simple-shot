@@ -8,6 +8,7 @@ public class PlayerInput : Singleton<PlayerInput>
     float moveVertical = 0;
     bool signalBomb = false;
     bool signalLowSpeed = false;
+    bool signalFire = false;
     void Start() {
         Reset();
     }
@@ -28,6 +29,9 @@ public class PlayerInput : Singleton<PlayerInput>
             moveHorizontal = 1;
         }
         if (Input.GetKey(KeyCode.Z)) {
+            signalFire = true;
+        }
+        if (Input.GetKey(KeyCode.X)) {
             signalBomb = true;
         }
         if (Input.GetKey(KeyCode.LeftShift)) {
@@ -35,11 +39,12 @@ public class PlayerInput : Singleton<PlayerInput>
         }
     }
 
-    public void GetInputSingal(ref float _moveH, ref float _moveV, ref bool _signalBomb, ref bool _signalLowSpeed) {
-        _moveH = this.moveHorizontal;
-        _moveV = this.moveVertical;
-        _signalBomb = this.signalBomb;
-        _signalLowSpeed = this.signalLowSpeed;
+    public void GetInputSingal(ref float aMoveH, ref float aMoveV, ref bool aSignalBomb, ref bool aSignalLowSpeed,ref bool aSignalFire) {
+        aMoveH = this.moveHorizontal;
+        aMoveV = this.moveVertical;
+        aSignalBomb = this.signalBomb;
+        aSignalLowSpeed = this.signalLowSpeed;
+        aSignalFire = this.signalFire;
     }
 
     public void Reset() {
@@ -47,5 +52,6 @@ public class PlayerInput : Singleton<PlayerInput>
         moveVertical = 0;
         signalBomb = false;
         signalLowSpeed = false;
+        signalFire = false;
     }
 }

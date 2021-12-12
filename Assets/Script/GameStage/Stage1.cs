@@ -8,6 +8,7 @@ public class Stage1 : Fuka {
     }
 
     public override void Run() {
+        GameUIControl.Instance.SetTopSlideVisiable(false);
         StartCoroutine(_Stage1());
     }
 

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class 判定点碰撞 : MonoBehaviour {
     //被弹幕击中触发着弹
     private bool CanBeShot=true;
-    public GameControl Control;
     public float TimeMuteki = 3f;
     public AudioSource BeShot;
 
@@ -33,7 +32,7 @@ public class 判定点碰撞 : MonoBehaviour {
         if (other.tag == "Danmu") {
             //Debug.Log("着弹");
             if (CanBeShot) {
-                Control.PlayerBeShot();
+                GameControl.Instance.PlayerBeShot();
                 BeShot.Play();
                 StartCoroutine(FlagChange(TimeMuteki));
             }

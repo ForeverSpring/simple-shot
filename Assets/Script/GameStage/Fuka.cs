@@ -13,8 +13,13 @@ public abstract class Fuka : MonoBehaviour
     public texStage textStage;
     public bool running;
     public string name;
+    public int BossLife;
+    public float FukaTime;
+    public FukaType type;//0:时符 1:一般符卡
     //TODO:符卡类面向对象
-
+    public enum FukaType {
+        TimeFuka,LifeFuka
+    }
     void Awake() {
         gameobjBoss = GameObject.Find("Boss");
         gameobjDanmuBall = (GameObject)Resources.Load("Prefab/danmuBall");
