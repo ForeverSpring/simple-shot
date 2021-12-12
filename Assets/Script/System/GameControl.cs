@@ -24,7 +24,7 @@ public class GameControl : Singleton<GameControl> {
     private float PauseRate = 1.5f;
     private float nextPause = 0f;
     private int posFuka;
-    List<Fuka> arrFuka = new List<Fuka>();//协程名
+    public List<Fuka> arrFuka = new List<Fuka>();//协程名
 
     //数据初始化
     public void InitialSet() {
@@ -76,7 +76,9 @@ public class GameControl : Singleton<GameControl> {
             isRuningFuka = false;
         }
     }
-
+    public Fuka GetRunningFuka() {
+        return arrFuka[posFuka];
+    }
     public void PauseGame() {
         Pause = true;
         Time.timeScale = 0;

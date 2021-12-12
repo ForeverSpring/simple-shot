@@ -9,9 +9,18 @@ public class controlPlayer : MonoBehaviour {
     private bool inLowSpeed;
     private bool FlagBomb = true;
     public float TimePerBomb = 5f;
+    [SerializeField] public float FireRate = 0.2f;
+    private float nextFire = 0f;
     public GameObject VfxBomb;
+    public GameObject normalBullet;
     public 判定点碰撞 DecisionPoint;
     public AudioSource audBomb;
+
+    void Start() {
+        inLowSpeed = false;
+        rb = GetComponent<Rigidbody>();
+        normalBullet = (GameObject)Resources.Load("Prefab/BulletPlayer");
+    }
 
     void Update() {
         //低速模式显示判定点，高速模式隐藏判定点
@@ -23,11 +32,6 @@ public class controlPlayer : MonoBehaviour {
         }
     }
 
-    void Start() {
-        inLowSpeed = false;
-        rb = GetComponent<Rigidbody>();
-    }
-
     void FixedUpdate() {
         //TODO:设置自定义按键
         float moveHorizontal = 0;
@@ -35,7 +39,8 @@ public class controlPlayer : MonoBehaviour {
         float moveSpeed = speedPlayerMove1;
         bool signalBomb = false;
         bool signalLowSpeed = false;
-        PlayerInput.Instance.GetInputSingal(ref moveHorizontal, ref moveVertical, ref signalBomb, ref signalLowSpeed);
+        bool signalFire = false;
+        PlayerInput.Instance.GetInputSingal(ref moveHorizontal, ref moveVertical, ref signalBomb, ref signalLowSpeed,ref signalFire);
 
         if (signalBomb && FlagBomb) {
             StartCoroutine(UseBomb());
@@ -46,6 +51,10 @@ public class controlPlayer : MonoBehaviour {
         }
         else {
             inLowSpeed = false;
+        }
+        if (signalFire && Time.fixedUnscaledTime >= nextFire) {
+            nextFire = Time.fixedUnscaledTime + FireRate;
+            Fire();
         }
 
         //根据移动方向设置移动速度，保证速度向量大小不变
@@ -63,6 +72,12 @@ public class controlPlayer : MonoBehaviour {
             StopCoroutine(nameof(PlayerPositionLimitCoroutine));
         }
         
+    }
+
+    void Fire() {
+        GameObject temp= Instantiate(normalBullet);
+        temp.transform.position = rb.transform.position;
+        temp.transform.forward = rb.transform.forward;
     }
 
     IEnumerator UseBomb() {

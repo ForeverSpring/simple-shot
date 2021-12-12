@@ -5,9 +5,11 @@ public class Fuka1_1 : Fuka
 {
     void Start(){
         name = "¿ªÄ»À×»÷";
+        type = FukaType.TimeFuka;
     }
 
     public override void Run() {
+        GameUIControl.Instance.SetTopSlideVisiable(false);
         StartCoroutine(_Fuka1_1());
     }
 

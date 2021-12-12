@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fuka1_3 : Fuka {
     void Start() {
         name = "自机狙加密集型随机弹";
+        type = FukaType.LifeFuka;
     }
 
     public override void Run() {
