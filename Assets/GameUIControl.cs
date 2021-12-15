@@ -28,11 +28,11 @@ public class GameUIControl : Singleton<GameUIControl>
     }
     public void SetTopSlideVisiable(bool visiable) {
         if (visiable) {
-            Debug.Log("set slider can be see");
+            //Debug.Log("set slider can be see");
             TopProcessSlider.transform.position = TopSliderPos;
         }
         else {
-            Debug.Log("set slider can not be see");
+            //Debug.Log("set slider can not be see");
             TopProcessSlider.transform.position = TopSliderPos + new Vector3(0f, 1000f, 0f);
         }
     }

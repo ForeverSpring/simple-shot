@@ -36,6 +36,7 @@ public class Fuka1_3 : Fuka {
     }
 
     IEnumerator _Fuka1_3() {
+        //TODO:修正循环符卡后的Boss移动错误
         float speedBoss = 3f;
         rbBoss.velocity = new Vector3(0f, -1f, 0f) * speedBoss;
         yield return new WaitForSeconds(0.3f);

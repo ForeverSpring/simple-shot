@@ -13,8 +13,10 @@ public class controlPlayer : MonoBehaviour {
     private float nextFire = 0f;
     public GameObject VfxBomb;
     public GameObject normalBullet;
+    public GameObject autoBullet;
     public 判定点碰撞 DecisionPoint;
     public AudioSource audBomb;
+    public Animator animator;
     void InitSettings() {
         speedPlayerMove1 = GameSettings.Instance.playerMoveSpeedHigh;
         speedPlayerMove2 = GameSettings.Instance.playerMoveSpeedLow;
@@ -26,7 +28,9 @@ public class controlPlayer : MonoBehaviour {
         InitSettings();
         inLowSpeed = false;
         rb = GetComponent<Rigidbody>();
+        animator = GameObject.Find("PlayerTex").GetComponent<Animator>();
         normalBullet = (GameObject)Resources.Load("Prefab/BulletPlayer");
+        autoBullet = (GameObject)Resources.Load("Prefab/AutoBulletPlayer");
     }
 
     void Update() {
@@ -65,11 +69,14 @@ public class controlPlayer : MonoBehaviour {
         }
 
         //根据移动方向设置移动速度，保证速度向量大小不变
+        //TODO:向量标准化
         Vector3 movement = Vector3.zero;
         if (moveHorizontal != 0 || moveVertical != 0) {
             float temp = Mathf.Sqrt(moveHorizontal * moveHorizontal + moveVertical * moveVertical);
             movement = new Vector3(moveHorizontal / temp, moveVertical / temp, 0.0f);
         }
+        animator.SetFloat("left", movement.x);
+        animator.SetFloat("right", -movement.x);
         rb.position = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
 
         if (movement != Vector3.zero) {
@@ -82,7 +89,8 @@ public class controlPlayer : MonoBehaviour {
     }
 
     void Fire() {
-        GameObject temp= Instantiate(normalBullet);
+        //GameObject temp= Instantiate(normalBullet);
+        GameObject temp = Instantiate(autoBullet);
         temp.transform.position = rb.transform.position;
         temp.transform.forward = rb.transform.forward;
     }

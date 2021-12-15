@@ -10,11 +10,11 @@ public class Fuka1_1 : Fuka
 
     public override void Run() {
         GameUIControl.Instance.SetTopSlideVisiable(false);
-        StartCoroutine(_Fuka1_1());
+        StartCoroutine("_Fuka1_1");
     }
 
     public override void Stop() {
-        StopCoroutine(_Fuka1_1());
+        StopCoroutine("_Fuka1_1");
     }
 
     IEnumerator _Fuka1_1() {
@@ -29,6 +29,7 @@ public class Fuka1_1 : Fuka
             for (int i = 0; i < 20; i++) {
                 AudioControl.Instance.PlayBossTan01();
                 GameObject temp = Instantiate(gameobjDanmuBall);
+                DanmuPool.Instance.mArrDanmu.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.GetComponent<moveDanmuBall>().speedDanmuBall = 15;
                 temp.transform.up = GameObject.Find("Player").transform.position - temp.transform.position;
@@ -38,6 +39,7 @@ public class Fuka1_1 : Fuka
             for (int i = 0; i < 20; i++) {
                 AudioControl.Instance.PlayBossTan01();
                 GameObject temp = Instantiate(gameobjDanmuBall);
+                DanmuPool.Instance.mArrDanmu.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(15);
                 temp.transform.up = GameObject.Find("Player").transform.position - temp.transform.position;
@@ -49,10 +51,12 @@ public class Fuka1_1 : Fuka
                 AudioControl.Instance.PlayBossRayShot();
                 for (int j = 0; j < 10; j++) {
                     GameObject temp1 = Instantiate(gameobjDanmuBallReflect);
+                    DanmuPool.Instance.mArrDanmu.Add(temp1);
                     temp1.transform.position = gameobjBoss.transform.position;
                     temp1.transform.rotation = Quaternion.Euler(temp1.transform.forward * (115 - 2 * i));
                     temp1.GetComponent<moveDanmuBall>().SetSpeed(15);
                     GameObject temp2 = Instantiate(gameobjDanmuBallReflect);
+                    DanmuPool.Instance.mArrDanmu.Add(temp2);
                     temp2.transform.position = gameobjBoss.transform.position;
                     temp2.transform.rotation = Quaternion.Euler(temp2.transform.forward * (245 + 2 * i));
                     temp2.GetComponent<moveDanmuBall>().SetSpeed(15);

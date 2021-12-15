@@ -6,7 +6,14 @@ public class BossCollider : MonoBehaviour
 {
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Bullet") {
-            Debug.Log("»÷ÖÐBoss");
+            Debug.Log("Destory by Boss:" + other.name);
+            Destroy(other.gameObject);
+            UpdateProcess();
+        }
+    }
+
+    void UpdateProcess() {
+        if (GameControl.Instance.GetRunningFuka().fukaType == Fuka.FukaType.LifeFuka) {
             FukaProcess.Instance.SetNowLife(FukaProcess.Instance.NowLife - 1);
             FukaProcess.Instance.UpdateProcess();
         }

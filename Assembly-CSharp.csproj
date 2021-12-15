@@ -63,6 +63,7 @@
     <Compile Include="Assets\Script\Input\PlayerInput.cs" />
     <Compile Include="Assets\Script\UI\texStage.cs" />
     <Compile Include="Assets\Script\GameStage\Stage1.cs" />
+    <Compile Include="Assets\Script\Bullet\AutoBulletPlayer.cs" />
     <Compile Include="Assets\Script\Bullet\moveDanmuBallReflect.cs" />
     <Compile Include="Assets\Script\System\PresistentSingleton.cs" />
     <Compile Include="Assets\Script\System\MainMenuUIcontroller.cs" />
