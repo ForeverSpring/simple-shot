@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <_TargetFrameworkDirectories>non_empty_path_generated_by_rider_editor_plugin</_TargetFrameworkDirectories>
     <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_rider_editor_plugin</_FullFrameworkReferenceAssemblyPaths>
     <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
@@ -56,6 +56,9 @@
     <UnityVersion>2020.3.16f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Script\GameStage\Fuka1_2.cs" />
     <Compile Include="Assets\Script\Input\PlayerInput.cs" />
     <Compile Include="Assets\Script\UI\texStage.cs" />
@@ -66,20 +69,22 @@
     <Compile Include="Assets\Script\Player\controlPlayer.cs" />
     <Compile Include="Assets\GameUIControl.cs" />
     <Compile Include="Assets\Script\UI\MenuControl.cs" />
+    <Compile Include="Assets\Script\BossCollider.cs" />
+    <Compile Include="Assets\Script\Bullet\BulletPlayer.cs" />
     <Compile Include="Assets\Script\GameStage\Fuka1_3.cs" />
     <Compile Include="Assets\Script\System\GameControl.cs" />
     <Compile Include="Assets\Script\System\Singleton.cs" />
     <Compile Include="Assets\Script\Player\判定点碰撞.cs" />
     <Compile Include="Assets\Script\Bullet\moveDanmuBall.cs" />
     <Compile Include="Assets\Script\GameStage\Fuka.cs" />
+    <Compile Include="Assets\Script\System\FukaProcess.cs" />
     <Compile Include="Assets\Script\System\ViewPort.cs" />
     <Compile Include="Assets\Script\GameStage\Fuka1_1.cs" />
+    <Compile Include="Assets\Script\System\GameSettings.cs" />
     <Compile Include="Assets\Script\DestroyDanmu.cs" />
     <Compile Include="Assets\Script\System\SceneLoader.cs" />
+    <Compile Include="Assets\Script\System\DanmuPool.cs" />
     <Compile Include="Assets\Script\System\AudioControl.cs" />
-    <Compile Include="Assets\Script\Bullet\BulletPlayer.cs" />
-    <Compile Include="Assets\Script\System\FukaProcess.cs" />
-    <Compile Include="Assets\Script\BossCollider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

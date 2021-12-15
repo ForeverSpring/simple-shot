@@ -6,7 +6,10 @@ public class BulletPlayer : MonoBehaviour
 {
     private Rigidbody rb;
     //TODO:use data class to store speed and can change it easily
-    private float mBulletSpeed = 8f;
+    private float mBulletSpeed;
+    private void Awake() {
+        mBulletSpeed = GameSettings.Instance.playerBulletSpeed;
+    }
     private void Start() {
         rb = GetComponent<Rigidbody>();
     }

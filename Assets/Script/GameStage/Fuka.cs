@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class Fuka : MonoBehaviour
 {
+    //TODO:工厂模式创建弹幕
+    //TODO:pool模式用于符卡结束时清除弹幕
     public GameObject gameobjBoss;
     public GameObject gameobjDanmuBall;
     public GameObject gameobjDanmuBallReflect;
@@ -12,13 +14,14 @@ public abstract class Fuka : MonoBehaviour
     public AudioSource BossTan01;
     public texStage textStage;
     public bool running;
-    public string name;
+    public string fukaName;
     public int BossLife;
     public float FukaTime;
-    public FukaType type;//0:时符 1:一般符卡
+    public FukaType fukaType;
+    public Vector3 vBossSpawn;
     //TODO:符卡类面向对象
     public enum FukaType {
-        TimeFuka,LifeFuka
+        TimeFuka,LifeFuka,NULL
     }
     void Awake() {
         gameobjBoss = GameObject.Find("Boss");
@@ -28,7 +31,8 @@ public abstract class Fuka : MonoBehaviour
         BossRayShot = GameObject.Find("ASRayShot").GetComponent<AudioSource>();
         BossTan01 = GameObject.Find("ASTan01").GetComponent<AudioSource>();
         textStage = GameObject.Find("texStage").GetComponent<texStage>();
-        name = "";
+        fukaType = FukaType.NULL;
+        fukaName = "";
         running = false;
     }
 

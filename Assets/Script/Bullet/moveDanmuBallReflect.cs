@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class moveDanmuBallReflect : moveDanmuBall {
     
-    private int reflectTimes = 5;//反弹次数
-    void Start() {
+    //TODO:settings类用于初始化所有游戏数值，可用观察者模式
+    private int reflectTimes;
 
+    void InitSettings() {
+        reflectTimes = GameSettings.Instance.danmuReflectTimes;
+    }
+    void Start() {
+        InitSettings();
     }
 
     void FixedUpdate() {
         transform.position = transform.position + transform.up * speedDanmuBall * Time.fixedDeltaTime;
-        if (reflectTimes > 0 && Boundary.IsOut(transform.position)) {
+        if (reflectTimes > 0 && !Boundary.InBoundary(transform.position)) {
             transform.up = CheckPos();
             reflectTimes--;
         }

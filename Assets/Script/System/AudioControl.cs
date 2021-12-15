@@ -7,6 +7,8 @@ public class AudioControl : PresistentSingleton<AudioControl>
 {
     public AudioSource mSePause;
     public AudioSource mSeBGM;
+    public AudioSource mBossRayShot;
+    public AudioSource mBossTan01;
     public float mBGMVolume;
     public float mSEVolume;
 
@@ -36,6 +38,10 @@ public class AudioControl : PresistentSingleton<AudioControl>
             mSEVolume = SliderSEVolume.value;
         }
     }
+    public void GetAudioSource() {
+        mBossRayShot = GameObject.Find("ASRayShot").GetComponent<AudioSource>();
+        mBossTan01 = GameObject.Find("ASTan01").GetComponent<AudioSource>();
+    }
     public void UpdateSettings() {
         Debug.Log("Update Options");
         mSeBGM.volume = mBGMVolume;
@@ -58,5 +64,12 @@ public class AudioControl : PresistentSingleton<AudioControl>
 
     public void PauseBGM() {
         mSeBGM.Pause();
+    }
+    public void PlayBossRayShot() {
+        mBossRayShot.PlayOneShot(mBossRayShot.clip, mSEVolume);
+    }
+
+    public void PlayBossTan01() {
+        mBossTan01.PlayOneShot(mBossTan01.clip, mSEVolume);
     }
 }

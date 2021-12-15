@@ -4,24 +4,37 @@ using UnityEngine;
 
 public class Fuka1_2 : Fuka {
     void Start() {
-        name = "鱼雷型集合的自机狙";
-        type = FukaType.LifeFuka;
+        fukaName = "鱼雷型集合的自机狙";
+        fukaType = FukaType.LifeFuka;
+        vBossSpawn = new Vector3(-1.975f, 3.5f, 0f);
     }
 
     public override void Run() {
+        Debug.Log("Fuka1_2 start");
+        GameControl.Instance.WaitFuka();
         GameUIControl.Instance.SetTopSlideVisiable(true);
-        FukaProcess.Instance.SetNewProcessData(200);
+        FukaProcess.Instance.SetNewProcessData(100);
         FukaProcess.Instance.UpdateProcess();
-        StartCoroutine(_Fuka1_2());
+        StartCoroutine("StartIEnumerator");
     }
 
     public override void Stop() {
-        StopCoroutine(_Fuka1_2());
+        Debug.Log("Fuka1_2 finish");
+        StopCoroutine("_Fuka1_2");
+        DanmuPool.Instance.ClearDanmu();
+        GameControl.Instance.SignalFuka();
     }
-
+    IEnumerator StartIEnumerator() {
+        float speedBoss = 3f;
+        rbBoss.velocity = (vBossSpawn - rbBoss.transform.position).normalized * speedBoss;
+        float waitTime = Mathf.Sqrt((vBossSpawn - rbBoss.transform.position).sqrMagnitude) / speedBoss;
+        yield return new WaitForSeconds(waitTime);
+        rbBoss.velocity = new Vector3(0f, 0f, 0f);
+        yield return new WaitForSeconds(2f);
+        StartCoroutine("_Fuka1_2");
+        yield return null;
+    }
     IEnumerator _Fuka1_2() {
-        GameControl.Instance.WaitFuka();
-        Debug.Log("Fuka1_2 start");
         float speedBoss = 3f;
         bool run = true;
         List<Vector3> moveLine = new List<Vector3> {
@@ -43,11 +56,13 @@ public class Fuka1_2 : Fuka {
             for (int i = 0; i < 10; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBallReflect);
                 lis.Add(temp);
+                DanmuPool.Instance.mArrDanmu.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 36 * i);
             }
             for (int i = 0; i < 10; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBallReflect);
+                DanmuPool.Instance.mArrDanmu.Add(temp);
                 lis2.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 36 * i);
@@ -82,8 +97,7 @@ public class Fuka1_2 : Fuka {
                 run = false;
             }
         }
-        Debug.Log("Fuka1_2 finish");
-        GameControl.Instance.SignalFuka();
+        StartCoroutine("_Fuka1_2");
         yield return null;
     }
 }

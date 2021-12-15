@@ -52,6 +52,6 @@ public class GameUIControl : Singleton<GameUIControl>
     public void BtnPauseRetryClicked() {
         //plya retry animation here
         SceneLoader.Instance.LoadGamePlayScene();
-        GameControl.Instance.InitialSet();
+        GameControl.Instance.InitSettings();
     }
 }

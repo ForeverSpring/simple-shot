@@ -3,20 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class controlPlayer : MonoBehaviour {
-    private float speedPlayerMove1 = 5.8f;
-    private float speedPlayerMove2 = 3.1f;
     private Rigidbody rb;
+    private float speedPlayerMove1;
+    private float speedPlayerMove2;
     private bool inLowSpeed;
     private bool FlagBomb = true;
     public float TimePerBomb = 5f;
-    [SerializeField] public float FireRate = 0.2f;
+    private float FireRate;
     private float nextFire = 0f;
     public GameObject VfxBomb;
     public GameObject normalBullet;
     public 判定点碰撞 DecisionPoint;
     public AudioSource audBomb;
-
+    void InitSettings() {
+        speedPlayerMove1 = GameSettings.Instance.playerMoveSpeedHigh;
+        speedPlayerMove2 = GameSettings.Instance.playerMoveSpeedLow;
+        FireRate = GameSettings.Instance.playerFireRate;
+    }
+    void Awake() {
+    }
     void Start() {
+        InitSettings();
         inLowSpeed = false;
         rb = GetComponent<Rigidbody>();
         normalBullet = (GameObject)Resources.Load("Prefab/BulletPlayer");

@@ -4,21 +4,38 @@ using UnityEngine;
 
 public class Fuka1_3 : Fuka {
     void Start() {
-        name = "自机狙加密集型随机弹";
-        type = FukaType.LifeFuka;
+        fukaName = "自机狙加密集型随机弹";
+        fukaType = FukaType.LifeFuka;
+        vBossSpawn = new Vector3(-1.975f, 3.5f, 0f);
     }
 
     public override void Run() {
-        StartCoroutine(_Fuka1_3());
+        Debug.Log("Fuka1_3 start");
+        GameControl.Instance.WaitFuka();
+        GameUIControl.Instance.SetTopSlideVisiable(true);
+        FukaProcess.Instance.SetNewProcessData(100);
+        FukaProcess.Instance.UpdateProcess();
+        StartCoroutine("StartIEnumerator");
     }
 
     public override void Stop() {
-        StopCoroutine(_Fuka1_3());
+        Debug.Log("Fuka1_3 end");
+        StopCoroutine("_Fuka1_3");
+        DanmuPool.Instance.ClearDanmu();
+        GameControl.Instance.SignalFuka();
+    }
+    IEnumerator StartIEnumerator() {
+        float speedBoss = 3f;
+        rbBoss.velocity = (vBossSpawn - rbBoss.transform.position).normalized * speedBoss;
+        float waitTime = Mathf.Sqrt((vBossSpawn - rbBoss.transform.position).sqrMagnitude) / speedBoss;
+        yield return new WaitForSeconds(waitTime);
+        rbBoss.velocity = new Vector3(0f, 0f, 0f);
+        yield return new WaitForSeconds(2f);
+        StartCoroutine("_Fuka1_3");
+        yield return null;
     }
 
     IEnumerator _Fuka1_3() {
-        GameControl.Instance.WaitFuka();
-        Debug.Log("Fuka1_3 start");
         float speedBoss = 3f;
         rbBoss.velocity = new Vector3(0f, -1f, 0f) * speedBoss;
         yield return new WaitForSeconds(0.3f);
@@ -46,6 +63,7 @@ public class Fuka1_3 : Fuka {
             List<GameObject> lis = new List<GameObject>();
             for (int i = 0; i < 5; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBall);
+                DanmuPool.Instance.mArrDanmu.Add(temp);
                 lis.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.transform.localScale = temp.transform.localScale * 0.5f;
@@ -59,6 +77,7 @@ public class Fuka1_3 : Fuka {
                 temp.GetComponent<moveDanmuBall>().SetSpeed(0);
                 for (int i = 0; i < 40; i++) {
                     GameObject temp1 = Instantiate(gameobjDanmuBall);
+                    DanmuPool.Instance.mArrDanmu.Add(temp1);
                     lis1.Add(temp1);
                     temp1.transform.position = temp.transform.position;
                     temp1.transform.localScale = temp.transform.localScale;
@@ -85,6 +104,7 @@ public class Fuka1_3 : Fuka {
             List<GameObject> lis2 = new List<GameObject>();
             for (int i = 0; i < 10; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBall);
+                DanmuPool.Instance.mArrDanmu.Add(temp);
                 lis2.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position +
                 new Vector3(r * Mathf.Cos(36 * i * Mathf.PI / 180), r * Mathf.Sin(36 * i * Mathf.PI / 180), 0f);
@@ -105,7 +125,6 @@ public class Fuka1_3 : Fuka {
             }
             yield return null;
         }
-        GameControl.Instance.SignalFuka();
-        Debug.Log("Fuka1_3 end");
+        StartCoroutine("_Fuka1_3");
     }
 }

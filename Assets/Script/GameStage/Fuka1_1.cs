@@ -4,8 +4,8 @@ using UnityEngine;
 public class Fuka1_1 : Fuka
 {
     void Start(){
-        name = "¿ªÄ»À×»÷";
-        type = FukaType.TimeFuka;
+        fukaName = "¿ªÄ»À×»÷";
+        fukaType = FukaType.TimeFuka;
     }
 
     public override void Run() {
@@ -27,16 +27,16 @@ public class Fuka1_1 : Fuka
             yield return new WaitForSeconds(3f);
             //Á½²¨×Ô»ú¾Ñ
             for (int i = 0; i < 20; i++) {
-                BossTan01.Play();
+                AudioControl.Instance.PlayBossTan01();
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 temp.transform.position = gameobjBoss.transform.position;
-                temp.GetComponent<moveDanmuBall>().SetSpeed(15);
+                temp.GetComponent<moveDanmuBall>().speedDanmuBall = 15;
                 temp.transform.up = GameObject.Find("Player").transform.position - temp.transform.position;
                 yield return new WaitForSeconds(0.1f);
             }
             yield return new WaitForSeconds(1f);
             for (int i = 0; i < 20; i++) {
-                BossTan01.Play();
+                AudioControl.Instance.PlayBossTan01();
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(15);
@@ -46,7 +46,7 @@ public class Fuka1_1 : Fuka
             yield return new WaitForSeconds(2);
             //¾µÃæ·´Éäµ¯Ä»
             for (int i = 0; i < 10; i++) {
-                BossRayShot.Play();
+                AudioControl.Instance.PlayBossRayShot();
                 for (int j = 0; j < 10; j++) {
                     GameObject temp1 = Instantiate(gameobjDanmuBallReflect);
                     temp1.transform.position = gameobjBoss.transform.position;

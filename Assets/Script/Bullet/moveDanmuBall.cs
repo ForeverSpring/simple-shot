@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class moveDanmuBall : MonoBehaviour {
     private Rigidbody rb;
-    public float speedDanmuBall = 5;
-    public float rotateSpeed = 0.5f;
+    public float speedDanmuBall { set; get; }
+    public float rotateSpeed { set; get; }
     public Vector3 rotateCenter=new Vector3();
     public bool isRotating = false;
-    void Start() {
+
+    void InitSettings() {
         rb = GetComponent<Rigidbody>();
+        speedDanmuBall = GameSettings.Instance.danmuMoveSpeed;
+        rotateSpeed = GameSettings.Instance.danmuRotateSpeed;
+    }
+    void Awake() {
+        InitSettings();
     }
 
     void FixedUpdate() {

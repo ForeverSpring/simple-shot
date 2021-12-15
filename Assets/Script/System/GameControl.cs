@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 static class Boundary {
     public static float xMin = -5.85f, xMax = 1.9f, yMin = -4.56f, yMax = 4.56f;
-    public static bool IsOut(Vector3 v) {
+    public static bool InBoundary(Vector3 v) {
         if (v.x > xMin && v.x < xMax && v.y > yMin && v.y < yMax) {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 }
 public class GameControl : Singleton<GameControl> {
@@ -27,17 +27,20 @@ public class GameControl : Singleton<GameControl> {
     public List<Fuka> arrFuka = new List<Fuka>();//协程名
 
     //数据初始化
-    public void InitialSet() {
+    public void InitSettings() {
         Time.timeScale = 1;
+        AudioControl.Instance.GetAudioSource();
         AudioControl.Instance.StopBGM();
         AudioControl.Instance.PlayBGM();
         posFuka = -1;
-        numPlayer = 5; numBomb = 3; numScore = 0;
+        numPlayer = GameSettings.Instance.playerStartLifeNum;
+        numBomb = GameSettings.Instance.playerStartBombNum;
+        numScore = 0;
         BreakFuka = false;
         gameover = false;
         isRuningFuka = false;
         Pause = false;
-        UpdataText();
+        UpdateText();
         arrFuka.Add(FukaManager.GetComponent<Stage1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_2>());
@@ -45,7 +48,7 @@ public class GameControl : Singleton<GameControl> {
     }
 
     private void Start() {
-        InitialSet();
+        InitSettings();
     }
 
     void Update() {
@@ -67,7 +70,7 @@ public class GameControl : Singleton<GameControl> {
             if (posFuka < arrFuka.Capacity) {
                 posFuka++;
                 arrFuka[posFuka].Run();
-                Debug.Log(posFuka + ":" + arrFuka[posFuka].name);
+                Debug.Log(posFuka + ":" + arrFuka[posFuka].fukaName);
             }
         }
         //符卡被击破时中断符卡协程
@@ -103,7 +106,7 @@ public class GameControl : Singleton<GameControl> {
     /// <summary>
     /// 数据操作函数
     /// </summary>
-    void UpdataText() {
+    void UpdateText() {
         texPlayer.text = "Player  " + numPlayer;
         texBomb.text = "Bomb  " + numBomb;
         texScore.text = "Score  " + numScore;
@@ -115,21 +118,21 @@ public class GameControl : Singleton<GameControl> {
         if (numBomb > 0) {
             numBomb--;
         }
-        UpdataText();
+        UpdateText();
     }
     public void addScore(int score) {
         numScore += score;
-        UpdataText();
+        UpdateText();
     }
     public void PlayerBeShot() {
         if (numPlayer > 0) {
             numPlayer--;
-            numBomb = 3;
+            numBomb = GameSettings.Instance.playerStartBombNum;
         }
         else if (numPlayer == 0) {
             gameover = true;
         }
-        UpdataText();
+        UpdateText();
     }
     //协程顺序执行互斥锁
     public void WaitFuka() {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stage1 : Fuka {
     void Start() {
-        name = "Stage1";
+        fukaName = "Stage1";
     }
 
     public override void Run() {

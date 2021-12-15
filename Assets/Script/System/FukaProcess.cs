@@ -6,7 +6,16 @@ public class FukaProcess : Singleton<FukaProcess>
 {
     public int BossLife { get; private set; }
     public int NowLife { get; private set; }
-    
+    private void FixedUpdate() {
+        CheckProcess();
+    }
+
+    void CheckProcess() {
+        Fuka running = GameControl.Instance.GetRunningFuka();
+        if (Instance.NowLife <= 0 && running.fukaType==Fuka.FukaType.LifeFuka) {
+            running.Stop();
+        }
+    }
     public void SetNewProcessData(int aBossLife) {
         this.BossLife = aBossLife;
         this.NowLife = aBossLife;
