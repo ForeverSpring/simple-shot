@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,14 +9,19 @@ public class GameUIControl : Singleton<GameUIControl>
     private GameObject CanvasPause;
     private Slider TopProcessSlider;
     private Vector3 TopSliderPos;
+    public Text TextFps;
     public void Start() {
         InitGameUI();
+    }
+    public void Update() {
+        TextFps.text = string.Format("FPS:{0:f2}", Fps.Instance.GetFps());// Math.Round(Fps.Instance.GetFps(), 2);
     }
 
     public void InitGameUI() {
         TopProcessSlider = GameObject.Find("GameProcess").GetComponent<Slider>();
         TopSliderPos = TopProcessSlider.transform.position;
         CanvasPause = GameObject.Find("CanvasPause");
+        TextFps = GameObject.Find("texFps").GetComponent<Text>();
         CanvasPause.SetActive(false);
     }
 

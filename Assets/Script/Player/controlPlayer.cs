@@ -75,8 +75,8 @@ public class controlPlayer : MonoBehaviour {
             float temp = Mathf.Sqrt(moveHorizontal * moveHorizontal + moveVertical * moveVertical);
             movement = new Vector3(moveHorizontal / temp, moveVertical / temp, 0.0f);
         }
-        animator.SetFloat("left", movement.x);
-        animator.SetFloat("right", -movement.x);
+        animator.SetFloat("left", -movement.x);
+        animator.SetFloat("right", movement.x);
         rb.position = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
 
         if (movement != Vector3.zero) {
