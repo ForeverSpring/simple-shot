@@ -13,11 +13,7 @@ static class Boundary {
 }
 public class GameControl : Singleton<GameControl> {
     public GameObject FukaManager;
-    public Text texPlayer, texBomb, texScore, texFukaName;
-    public AudioSource BossRayShot;
-    public AudioSource BossTan01;
-    public int numPlayer, numBomb, numScore;
-    private bool gameover;
+    public bool gameover,gamewin;
     private bool Pause;
     private bool isRuningFuka;
     private bool BreakFuka;
@@ -25,6 +21,7 @@ public class GameControl : Singleton<GameControl> {
     private float nextPause = 0f;
     private int posFuka;
     public List<Fuka> arrFuka = new List<Fuka>();//协程名
+    
 
     //数据初始化
     public void InitSettings() {
@@ -33,18 +30,15 @@ public class GameControl : Singleton<GameControl> {
         AudioControl.Instance.StopBGM();
         AudioControl.Instance.PlayBGM();
         posFuka = -1;
-        numPlayer = GameSettings.Instance.playerStartLifeNum;
-        numBomb = GameSettings.Instance.playerStartBombNum;
-        numScore = 0;
         BreakFuka = false;
         gameover = false;
         isRuningFuka = false;
         Pause = false;
-        UpdateText();
         arrFuka.Add(FukaManager.GetComponent<Stage1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_2>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_3>());
+        arrFuka.Add(FukaManager.GetComponent<Fuka1Finish>());
     }
 
     private void Start() {
@@ -52,9 +46,7 @@ public class GameControl : Singleton<GameControl> {
     }
 
     void Update() {
-        if (gameover) {
-            GameOver();
-        }
+        CheckGameState();
         //TODO: Refacor system of game process  EXAMPLE: updateProcess()
         if (Input.GetKey(KeyCode.Escape) && !gameover && Time.unscaledTime >= nextPause) {
             nextPause = Time.unscaledTime + PauseRate;
@@ -79,8 +71,19 @@ public class GameControl : Singleton<GameControl> {
             isRuningFuka = false;
         }
     }
+    private void CheckGameState() {
+        if (gameover) {
+            GameOver();
+        }
+        if (gamewin) {
+            GameWin();
+        }
+    }
     public Fuka GetRunningFuka() {
         return arrFuka[posFuka];
+    }
+    public void SetGameWin(bool aGameWin) {
+        gamewin = aGameWin;
     }
     public void PauseGame() {
         Pause = true;
@@ -97,43 +100,29 @@ public class GameControl : Singleton<GameControl> {
         AudioControl.Instance.PlayPause();
         AudioControl.Instance.PlayBGM();
     }
+    public void RetryGame() {
+        //plya retry animation here
+        SceneLoader.Instance.LoadGamePlayScene();
+        GameControl.Instance.InitSettings();
+    }
+    public void ReturnSelect() {
+        SceneLoader.Instance.LoadMainMenuScene();
+    }
     void GameOver() {
-        //Debug.Log("GameOver!");
         Time.timeScale = 0;
+        GameUIControl.Instance.EnterLost();
         AudioControl.Instance.StopBGM();
+    }
+
+    void GameWin() {
+        Time.timeScale = 0;
+        GameUIControl.Instance.EnterWin();
     }
 
     /// <summary>
     /// 数据操作函数
     /// </summary>
-    void UpdateText() {
-        texPlayer.text = "Player  " + numPlayer;
-        texBomb.text = "Bomb  " + numBomb;
-        texScore.text = "Score  " + numScore;
-    }
-    public bool hasBomb() {
-        return numBomb > 0;
-    }
-    public void useBomb() {
-        if (numBomb > 0) {
-            numBomb--;
-        }
-        UpdateText();
-    }
-    public void addScore(int score) {
-        numScore += score;
-        UpdateText();
-    }
-    public void PlayerBeShot() {
-        if (numPlayer > 0) {
-            numPlayer--;
-            numBomb = GameSettings.Instance.playerStartBombNum;
-        }
-        else if (numPlayer == 0) {
-            gameover = true;
-        }
-        UpdateText();
-    }
+
     //协程顺序执行互斥锁
     public void WaitFuka() {
         isRuningFuka = true;

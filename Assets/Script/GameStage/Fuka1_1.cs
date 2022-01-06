@@ -10,6 +10,7 @@ public class Fuka1_1 : Fuka
 
     public override void Run() {
         GameUIControl.Instance.SetTopSlideVisiable(false);
+        GameUIControl.Instance.FukaNameStart(fukaName);
         StartCoroutine("_Fuka1_1");
     }
 

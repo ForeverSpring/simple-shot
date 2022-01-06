@@ -13,6 +13,7 @@ public class Fuka1_2 : Fuka {
         Debug.Log("Fuka1_2 start");
         GameControl.Instance.WaitFuka();
         GameUIControl.Instance.SetTopSlideVisiable(true);
+        GameUIControl.Instance.FukaNameStart(fukaName);
         FukaProcess.Instance.SetNewProcessData(100);
         FukaProcess.Instance.UpdateProcess();
         StartCoroutine("StartIEnumerator");

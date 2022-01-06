@@ -6,17 +6,26 @@ using UnityEngine.UI;
 public class MainMenuUIcontroller : MonoBehaviour
 {
     public Button btnStart;
-    public GameObject mMainMenu,mOption;
+    public GameObject mMainMenu,mOption,mStart;
 
     private void InitUI() {
         mMainMenu = GameObject.Find("MainMenu");
         mOption = GameObject.Find("CanvasOption");
+        mStart = GameObject.Find("CanvasStart");
     }
-    void Start()
-    {
-        InitUI();
+    void Start() {
+        //InitUI();
+        EnterStart();
+    }
+    public void EnterStart() {
+        mStart.SetActive(true);
+        mMainMenu.SetActive(false);
+        mOption.SetActive(false);
+    }
+
+    public void ExitStart() {
+        mStart.SetActive(false);
         EnterMainMenu();
-        btnStart.Select();
     }
 
     public void EnterOption() {
@@ -25,10 +34,14 @@ public class MainMenuUIcontroller : MonoBehaviour
     }
 
     public void EnterMainMenu() {
+        btnStart.Select();
         mMainMenu.gameObject.SetActive(true);
         mOption.gameObject.SetActive(false);
     }
-
+    //Button of StartMenu
+    public void BtnStartContinueClicked() {
+        ExitStart();
+    }
     //Button of MainMenu
     public void BtnMainStartClicked() {
         SceneLoader.Instance.LoadGamePlayScene();

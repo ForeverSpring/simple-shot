@@ -38,6 +38,12 @@ public abstract class Fuka : MonoBehaviour
 
     public abstract void Run();
 
+    /// <summary>
+    /// Stop() use method
+    /// if Fuka is life type, Stop() in FukaProcess
+    ///            time type, Stop() in GameController TODO:conbine in one class
+    /// use Singal Var in Stop()
+    /// </summary>
     public abstract void Stop();
 
 }

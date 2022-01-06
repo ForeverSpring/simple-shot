@@ -8,9 +8,10 @@ public class FukaProcess : Singleton<FukaProcess> {
         CheckProcess();
     }
     void CheckProcess() {
-        Fuka running = GameControl.Instance.GetRunningFuka();
-        if (Instance.NowLife <= 0 && running.fukaType == Fuka.FukaType.LifeFuka) {
-            running.Stop();
+        if(GameControl.Instance.GetRunningFuka() != null) {
+            if (Instance.NowLife <= 0 && GameControl.Instance.GetRunningFuka().fukaType == Fuka.FukaType.LifeFuka) {
+                GameControl.Instance.GetRunningFuka().Stop();
+            }
         }
     }
     public void SetNewProcessData(int aBossLife) {
@@ -24,6 +25,6 @@ public class FukaProcess : Singleton<FukaProcess> {
         this.NowLife = aNowLife;
     }
     public void UpdateProcess() {
-        GameUIControl.Instance.UpdateTopSlide(NowLife / (float)BossLife);
+        GameUIControl.Instance.SetTopSlide(NowLife / (float)BossLife);
     }
 }

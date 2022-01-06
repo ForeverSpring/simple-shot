@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AudioControl : PresistentSingleton<AudioControl>
-{
+public class AudioControl : PresistentSingleton<AudioControl> {
     public AudioSource mSePause;
     public AudioSource mSeBGM;
     public AudioSource mBossRayShot;

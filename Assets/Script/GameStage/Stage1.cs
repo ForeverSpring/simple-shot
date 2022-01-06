@@ -9,11 +9,11 @@ public class Stage1 : Fuka {
 
     public override void Run() {
         GameUIControl.Instance.SetTopSlideVisiable(false);
-        StartCoroutine(_Stage1());
+        StartCoroutine("_Stage1");
     }
 
     public override void Stop() {
-        StopCoroutine(_Stage1());
+        StopCoroutine("_Stage1");
     }
 
     /// <summary>

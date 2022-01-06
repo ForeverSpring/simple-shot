@@ -6,58 +6,94 @@ using UnityEngine.UI;
 
 public class GameUIControl : Singleton<GameUIControl>
 {
-    private GameObject CanvasPause;
+    public GameObject CanvasPause;
+    public GameObject CanvasWin;
+    public GameObject CanvasLost;
     private Slider TopProcessSlider;
     private Vector3 TopSliderPos;
     public Text TextFps;
+    public Text texPlayer, texBomb, texScore, texFukaName;
+    public Animator textFukaNameAnimator;
     public void Start() {
         InitGameUI();
     }
     public void Update() {
-        TextFps.text = string.Format("FPS:{0:f2}", Fps.Instance.GetFps());// Math.Round(Fps.Instance.GetFps(), 2);
+        UpdateFpsText();
+        UpdateDataText();
+        UpdateAnimator();
     }
 
     public void InitGameUI() {
         TopProcessSlider = GameObject.Find("GameProcess").GetComponent<Slider>();
         TopSliderPos = TopProcessSlider.transform.position;
-        CanvasPause = GameObject.Find("CanvasPause");
         TextFps = GameObject.Find("texFps").GetComponent<Text>();
         CanvasPause.SetActive(false);
+        CanvasWin.SetActive(false);
+        CanvasLost.SetActive(false);
     }
-
+    //Update function
+    void UpdateFpsText() {
+        TextFps.text = string.Format("FPS:{0:f2}", Fps.Instance.GetFps());
+    }
+    void UpdateDataText() {
+        texPlayer.text = "Player  " + GameData.Instance.numPlayer;
+        texBomb.text = "Bomb  " + GameData.Instance.numBomb;
+        texScore.text = "Score  " + GameData.Instance.numScore;
+    }
+    void UpdateAnimator() {
+        textFukaNameAnimator.SetBool("Start", false);
+    }
+    //UI state
     public void EnterPause() {
         CanvasPause.SetActive(true);
     }
-
     public void ExitPause() {
         CanvasPause.SetActive(false);
     }
+    public void EnterWin() {
+        CanvasWin.SetActive(true);
+    }
+    public void EnterLost() {
+        CanvasLost.SetActive(true);
+    }
+    //Text FukaName
+    public void FukaNameStart(String aFukaName) {
+        texFukaName.text = aFukaName;
+        textFukaNameAnimator.SetBool("Start", true);
+    }
+    //Slider Top process
     public void SetTopSlideVisiable(bool visiable) {
         if (visiable) {
-            //Debug.Log("set slider can be see");
             TopProcessSlider.transform.position = TopSliderPos;
         }
         else {
-            //Debug.Log("set slider can not be see");
             TopProcessSlider.transform.position = TopSliderPos + new Vector3(0f, 1000f, 0f);
         }
     }
-    public void UpdateTopSlide(float aValue) {
+    public void SetTopSlide(float aValue) {
         TopProcessSlider.value = aValue;
     }
-    //Button Pause
+    //Button CanvasLost
+    public void BtnLostReturnSelectClicked() {
+        GameControl.Instance.ReturnSelect();
+    }
+    public void BtnLostRetryClicked() {
+        GameControl.Instance.RetryGame();
+    }
+    //Button CanvasWin
+    public void BtnWinContinueClicked() {
+        //play win animation
+        GameControl.Instance.ReturnSelect();
+    }
+    //Button CanvasPause
     public void BtnPauseReturnGameClicked() {
         ExitPause();
         GameControl.Instance.ReturnGame();
     }
-
     public void BtnPauseReturnSelectClicked() {
-        SceneLoader.Instance.LoadMainMenuScene();
+        GameControl.Instance.ReturnSelect();
     }
-
     public void BtnPauseRetryClicked() {
-        //plya retry animation here
-        SceneLoader.Instance.LoadGamePlayScene();
-        GameControl.Instance.InitSettings();
+        GameControl.Instance.RetryGame();
     }
 }
