@@ -15,7 +15,6 @@ public class Fuka1_2 : Fuka {
         GameUIControl.Instance.SetTopSlideVisiable(true);
         GameUIControl.Instance.FukaNameStart(fukaName);
         FukaProcess.Instance.SetNewProcessData(100);
-        FukaProcess.Instance.UpdateProcess();
         StartCoroutine("StartIEnumerator");
     }
 
@@ -68,6 +67,7 @@ public class Fuka1_2 : Fuka {
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 36 * i);
             }
+            AudioControl.Instance.PlayBossTan02();
             yield return new WaitForSeconds(0.2f);
             float speed_round = 5f;
             foreach (GameObject temp in lis) {
@@ -81,6 +81,7 @@ public class Fuka1_2 : Fuka {
                 temp.GetComponent<moveDanmuBallReflect>().SetSpeed(speed_round);
                 temp.transform.up = GameObject.Find("Player").transform.position - rbBoss.transform.position;
             }
+            AudioControl.Instance.PlayBossTan01();
             for (int i = 0; i < 60; i++) {
                 GameObject temp = Instantiate(gameobjDanmuBall);
                 temp.transform.position = gameobjBoss.transform.position;
@@ -92,6 +93,7 @@ public class Fuka1_2 : Fuka {
                 temp.GetComponent<moveDanmuBallReflect>().SetSpeed(speed_round);
                 temp.transform.up = GameObject.Find("Player").transform.position - rbBoss.transform.position;
             }
+            AudioControl.Instance.PlayBossTan01();
             yield return new WaitForSeconds(1f);
             times++;
             if (times == 12) {

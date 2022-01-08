@@ -80,6 +80,8 @@ public class GameControl : Singleton<GameControl> {
         }
     }
     public Fuka GetRunningFuka() {
+        if (posFuka == -1)
+            return null;
         return arrFuka[posFuka];
     }
     public void SetGameWin(bool aGameWin) {
@@ -113,15 +115,10 @@ public class GameControl : Singleton<GameControl> {
         GameUIControl.Instance.EnterLost();
         AudioControl.Instance.StopBGM();
     }
-
     void GameWin() {
         Time.timeScale = 0;
         GameUIControl.Instance.EnterWin();
     }
-
-    /// <summary>
-    /// 数据操作函数
-    /// </summary>
 
     //协程顺序执行互斥锁
     public void WaitFuka() {

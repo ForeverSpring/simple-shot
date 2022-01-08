@@ -8,6 +8,8 @@ TagManager:
   - Scene
   - Boss
   - Bullet
+  - UILife
+  - UIBomb
   layers:
   - Default
   - TransparentFX

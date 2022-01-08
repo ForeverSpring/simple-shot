@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : Singleton<PlayerInput>
 {
+    //TODO:设置自定义按键
     float moveHorizontal = 0;
     float moveVertical = 0;
     bool signalBomb = false;
@@ -28,10 +29,15 @@ public class PlayerInput : Singleton<PlayerInput>
         if (Input.GetKey(KeyCode.RightArrow)) {
             moveHorizontal = 1;
         }
-        if (Input.GetKey(KeyCode.Z)) {
+        //moveHorizontal = Input.GetAxis("Horizontal");
+        //moveVertical = Input.GetAxis("Vertical");
+        //if (Input.GetKey(KeyCode.Z)) {
+        //    signalFire = true;
+        //}
+        if (Input.GetButton("PlayerShot")) {
             signalFire = true;
         }
-        if (Input.GetKey(KeyCode.X)) {
+        if (Input.GetButton("PlayerBomb")) {
             signalBomb = true;
         }
         if (Input.GetKey(KeyCode.LeftShift)) {

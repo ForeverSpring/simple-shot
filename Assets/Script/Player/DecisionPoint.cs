@@ -6,10 +6,6 @@ public class DecisionPoint : MonoBehaviour {
     //被弹幕击中触发着弹
     private bool CanBeShot=true;
     public float TimeMuteki = 3f;
-    public AudioSource BeShot;
-
-    private void Start() {
-    }
 
     public bool isMuteki() {
         return !CanBeShot;
@@ -20,7 +16,7 @@ public class DecisionPoint : MonoBehaviour {
         StartCoroutine(FlagChange(MutekiTime));
     }
 
-    // 无敌时间内不可继续着弹
+    //无敌时间内不可继续着弹
     IEnumerator FlagChange(float MutekiTime) {
         CanBeShot = false;
         yield return new WaitForSeconds(MutekiTime);
@@ -33,24 +29,9 @@ public class DecisionPoint : MonoBehaviour {
             //Debug.Log("着弹");
             if (CanBeShot) {
                 GameData.Instance.PlayerBeShot();
-                BeShot.Play();
+                AudioControl.Instance.PlayBeShot();
                 StartCoroutine(FlagChange(TimeMuteki));
             }
-        }
-    }
-
-    //TODO:添加Debug字幕
-    private void FixedUpdate() {
-        if (!CanBeShot) {
-            GameObject.Find("TextDebug").GetComponent<Text>().text = "Debug MUTEKI";
-        }
-        else {
-            GameObject.Find("TextDebug").GetComponent<Text>().text = "Debug";
-        }
-        string nameFuka = GameControl.Instance.GetRunningFuka().fukaName;
-        GameObject.Find("TextDebug").GetComponent<Text>().text += ("\n" + nameFuka);
-        foreach(Fuka f in GameControl.Instance.arrFuka) {
-            Debug.Log(f.name);
         }
     }
 }

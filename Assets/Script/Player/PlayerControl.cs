@@ -15,7 +15,6 @@ public class PlayerControl : MonoBehaviour {
     public GameObject normalBullet;
     public GameObject autoBullet;
     public DecisionPoint DecisionPoint;
-    public AudioSource audBomb;
     public Animator animator;
     void InitSettings() {
         speedPlayerMove1 = GameSettings.Instance.playerMoveSpeedHigh;
@@ -44,14 +43,13 @@ public class PlayerControl : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        //TODO:设置自定义按键
         float moveHorizontal = 0;
         float moveVertical = 0;
         float moveSpeed = speedPlayerMove1;
         bool signalBomb = false;
         bool signalLowSpeed = false;
         bool signalFire = false;
-        PlayerInput.Instance.GetInputSingal(ref moveHorizontal, ref moveVertical, ref signalBomb, ref signalLowSpeed,ref signalFire);
+        PlayerInput.Instance.GetInputSingal(ref moveHorizontal, ref moveVertical, ref signalBomb, ref signalLowSpeed, ref signalFire);
 
         if (signalBomb && FlagBomb) {
             StartCoroutine(UseBomb());
@@ -67,25 +65,18 @@ public class PlayerControl : MonoBehaviour {
             nextFire = Time.fixedUnscaledTime + FireRate;
             Fire();
         }
-
-        //根据移动方向设置移动速度，保证速度向量大小不变
-        //TODO:向量标准化
+        //向量标准化，保证移动速度大小不变
         Vector3 movement = Vector3.zero;
         if (moveHorizontal != 0 || moveVertical != 0) {
-            float temp = Mathf.Sqrt(moveHorizontal * moveHorizontal + moveVertical * moveVertical);
-            movement = new Vector3(moveHorizontal / temp, moveVertical / temp, 0.0f);
+            movement = new Vector3(moveHorizontal, moveVertical).normalized;
         }
         animator.SetFloat("left", -movement.x);
         animator.SetFloat("right", movement.x);
         rb.position = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
-
-        if (movement != Vector3.zero) {
+        if (movement != Vector3.zero)
             StartCoroutine(nameof(PlayerPositionLimitCoroutine));
-        }
-        else {
+        else
             StopCoroutine(nameof(PlayerPositionLimitCoroutine));
-        }
-        
     }
 
     void Fire() {
@@ -99,7 +90,7 @@ public class PlayerControl : MonoBehaviour {
         FlagBomb = false;
         //有B并且不在无敌状态可以使用B
         if (GameData.Instance.hasBomb() && !DecisionPoint.isMuteki()) {
-            audBomb.Play();
+            AudioControl.Instance.PlayUseBomb();
             GameData.Instance.useBomb();
             DecisionPoint.SetMutekiTime(TimePerBomb);
             GameObject tempVfx = Instantiate(VfxBomb, rb.transform);

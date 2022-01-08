@@ -8,17 +8,14 @@ public class Fuka1_3 : Fuka {
         fukaType = FukaType.LifeFuka;
         vBossSpawn = new Vector3(-1.975f, 3.5f, 0f);
     }
-
     public override void Run() {
         Debug.Log("Fuka1_3 start");
         GameControl.Instance.WaitFuka();
         GameUIControl.Instance.SetTopSlideVisiable(true);
         GameUIControl.Instance.FukaNameStart(fukaName);
         FukaProcess.Instance.SetNewProcessData(100);
-        FukaProcess.Instance.UpdateProcess();
         StartCoroutine("StartIEnumerator");
     }
-
     public override void Stop() {
         Debug.Log("Fuka1_3 end");
         StopCoroutine("_Fuka1_3");
@@ -35,9 +32,7 @@ public class Fuka1_3 : Fuka {
         StartCoroutine("_Fuka1_3");
         yield return null;
     }
-
     IEnumerator _Fuka1_3() {
-        //TODO:修正循环符卡后的Boss移动错误
         float speedBoss = 3f;
         rbBoss.velocity = new Vector3(0f, -1f, 0f) * speedBoss;
         yield return new WaitForSeconds(0.3f);

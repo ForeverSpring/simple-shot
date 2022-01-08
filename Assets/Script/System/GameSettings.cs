@@ -15,4 +15,7 @@ public class GameSettings : Singleton<GameSettings>
     [SerializeField] public int danmuReflectTimes = 5;
     [SerializeField] public float danmuMoveSpeed = 5;
     [SerializeField] public float danmuRotateSpeed = 0.5f;
+    public void Start() {
+        Debug.Log("GameSettings Ready.");
+    }
 }

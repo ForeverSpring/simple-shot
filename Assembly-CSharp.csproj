@@ -11,7 +11,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{12F59D50-D66D-D20A-2EC2-35F31D153172}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -59,6 +60,7 @@
     <Compile Include="Assets\Script\GameStage\Fuka1_2.cs" />
     <Compile Include="Assets\Script\Input\PlayerInput.cs" />
     <Compile Include="Assets\Script\UI\texStage.cs" />
+    <Compile Include="Assets\Script\System\GameData.cs" />
     <Compile Include="Assets\Script\GameStage\Stage1.cs" />
     <Compile Include="Assets\Script\Bullet\AutoBulletPlayer.cs" />
     <Compile Include="Assets\Script\Bullet\moveDanmuBallReflect.cs" />
@@ -66,27 +68,26 @@
     <Compile Include="Assets\Script\GameStage\Fuka1Finish.cs" />
     <Compile Include="Assets\Script\System\MainMenuUIcontroller.cs" />
     <Compile Include="Assets\Script\Player\PlayerControl.cs" />
-    <Compile Include="Assets\GameUIControl.cs" />
+    <Compile Include="Assets\Script\UI\GameUIControl.cs" />
     <Compile Include="Assets\Script\UI\MenuControl.cs" />
-    <Compile Include="Assets\Script\BossCollider.cs" />
+    <Compile Include="Assets\Script\Enemy\BossCollider.cs" />
     <Compile Include="Assets\Script\Bullet\BulletPlayer.cs" />
     <Compile Include="Assets\Script\GameStage\Fuka1_3.cs" />
     <Compile Include="Assets\Script\System\GameControl.cs" />
     <Compile Include="Assets\Script\System\Singleton.cs" />
     <Compile Include="Assets\Script\Player\DecisionPoint.cs" />
     <Compile Include="Assets\Script\Bullet\moveDanmuBall.cs" />
-    <Compile Include="Assets\Script\Fps.cs" />
+    <Compile Include="Assets\Script\Tool\Fps.cs" />
     <Compile Include="Assets\Script\GameStage\Fuka.cs" />
     <Compile Include="Assets\Script\System\FukaProcess.cs" />
     <Compile Include="Assets\Script\System\ViewPort.cs" />
     <Compile Include="Assets\Script\GameStage\Fuka1_1.cs" />
     <Compile Include="Assets\Script\System\GameSettings.cs" />
-    <Compile Include="Assets\Script\DestroyDanmu.cs" />
+    <Compile Include="Assets\Script\System\DestroyDanmu.cs" />
     <Compile Include="Assets\Script\Player\ReimuControl.cs" />
     <Compile Include="Assets\Script\System\SceneLoader.cs" />
     <Compile Include="Assets\Script\System\DanmuPool.cs" />
     <Compile Include="Assets\Script\System\AudioControl.cs" />
-    <Compile Include="Assets\Script\System\GameData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -776,7 +777,8 @@
       <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

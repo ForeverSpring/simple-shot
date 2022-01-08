@@ -24,6 +24,7 @@ public class Fuka1Finish : Fuka
     IEnumerator Finish() {
         //show finish animation here
         GameControl.Instance.SetGameWin(true);
+        AudioControl.Instance.PlayBeatBoss();
         AudioControl.Instance.StopBGM();
         yield return null;
     }

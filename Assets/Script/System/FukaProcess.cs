@@ -15,14 +15,17 @@ public class FukaProcess : Singleton<FukaProcess> {
         }
     }
     public void SetNewProcessData(int aBossLife) {
-        this.BossLife = aBossLife;
-        this.NowLife = aBossLife;
+        BossLife = aBossLife;
+        NowLife = aBossLife;
+        UpdateProcess();
     }
     public void SetBossLife(int aBossLife) {
-        this.BossLife = aBossLife;
+        BossLife = aBossLife;
+        UpdateProcess();
     }
     public void SetNowLife(int aNowLife) {
-        this.NowLife = aNowLife;
+        NowLife = aNowLife;
+        UpdateProcess();
     }
     public void UpdateProcess() {
         GameUIControl.Instance.SetTopSlide(NowLife / (float)BossLife);
