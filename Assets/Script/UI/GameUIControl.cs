@@ -22,7 +22,6 @@ public class GameUIControl : Singleton<GameUIControl>
     }
     public void Update() {
         UpdateDataText();
-        UpdateAnimator();
     }
     public void FixedUpdate() {
         UpdateFpsText();
@@ -88,9 +87,6 @@ public class GameUIControl : Singleton<GameUIControl>
         texBomb.text = "Bomb  " + GameData.Instance.numBomb;
         texScore.text = "Score  " + GameData.Instance.numScore;
     }
-    void UpdateAnimator() {
-        textFukaNameAnimator.SetBool("Start", false);
-    }
     public void UpdatePlayerLife() {
         int index_obj = 0;
         foreach(GameObject obj in arrLife) {
@@ -125,7 +121,7 @@ public class GameUIControl : Singleton<GameUIControl>
     //Text FukaName
     public void FukaNameStart(String aFukaName) {
         texFukaName.text = aFukaName;
-        textFukaNameAnimator.SetBool("Start", true);
+        textFukaNameAnimator.Play("Start");
     }
     //Slider Top process
     public void SetTopSlideVisiable(bool visiable) {

@@ -195,7 +195,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78099466}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3426,7 +3426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: 376}
+  m_AnchoredPosition: {x: -16, y: 376}
   m_SizeDelta: {x: 373.58, y: 72.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1174982610
@@ -3456,7 +3456,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 70
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4903,6 +4903,7 @@ MonoBehaviour:
   mSeBGM: {fileID: 137708507}
   mBossRayShot: {fileID: 903178351}
   mBossTan01: {fileID: 0}
+  mBossTan02: {fileID: 0}
   mBeShot: {fileID: 0}
   mUseBomb: {fileID: 0}
   mBeatBoss: {fileID: 0}
