@@ -3,16 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameUIControl : Singleton<GameUIControl>
 {
+    public Button btnReturnToGame;
     public GameObject CanvasPause;
     public GameObject CanvasWin;
     public GameObject CanvasLost;
     public GameObject CanvasGame;
     private Slider TopProcessSlider;
     private Vector3 TopSliderPos;
-    public Text TextFps;
+    public TextMeshProUGUI textFps;
     public Text texPlayer, texBomb, texScore, texFukaName;
     public Animator textFukaNameAnimator;
     public List<GameObject> arrLife = new List<GameObject>();
@@ -33,8 +35,8 @@ public class GameUIControl : Singleton<GameUIControl>
             TopProcessSlider = GameObject.Find("GameProcess").GetComponent<Slider>();
         //TopSliderPos = TopProcessSlider.transform.position;
         TopSliderPos = new Vector3(-189, 425, 0);
-        if (TextFps == null)
-            TextFps = GameObject.Find("texFps").GetComponent<Text>();
+        if (textFps == null)
+            textFps = GameObject.Find("texFps").GetComponent<TextMeshProUGUI>();
         CanvasPause.SetActive(false);
         CanvasWin.SetActive(false);
         CanvasLost.SetActive(false);
@@ -80,7 +82,7 @@ public class GameUIControl : Singleton<GameUIControl>
         GameObject.Find("TextDebug").GetComponent<Text>().text = ret;
     }
     void UpdateFpsText() {
-        TextFps.text = string.Format("FPS:{0:f2}", Fps.Instance.GetFps());
+        textFps.text = string.Format("{0:f1}fps", Fps.Instance.GetFps());
     }
     void UpdateDataText() {
         texPlayer.text = "Player  " + GameData.Instance.numPlayer;
@@ -108,6 +110,7 @@ public class GameUIControl : Singleton<GameUIControl>
     //UI state
     public void EnterPause() {
         CanvasPause.SetActive(true);
+        btnReturnToGame.Select();
     }
     public void ExitPause() {
         CanvasPause.SetActive(false);

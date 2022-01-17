@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AudioControl : PresistentSingleton<AudioControl> {
     public AudioSource mSePause;
     public AudioSource mSeBGM;
+    public AudioSource mSeButtonSwitch;
     //Game Audio Sources
     public AudioSource mBossRayShot;
     public AudioSource mBossTan01;
@@ -68,6 +69,9 @@ public class AudioControl : PresistentSingleton<AudioControl> {
     }
     public void PauseBGM() {
         mSeBGM.Pause();
+    }
+    public void PlayButtonSwitch() {
+        mSeButtonSwitch.PlayOneShot(mSeButtonSwitch.clip, mSEVolume);
     }
     public void PlayBossRayShot() {
         mBossRayShot.PlayOneShot(mBossRayShot.clip, mSEVolume);
