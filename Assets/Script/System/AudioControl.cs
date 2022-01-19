@@ -7,6 +7,7 @@ public class AudioControl : PresistentSingleton<AudioControl> {
     public AudioSource mSePause;
     public AudioSource mSeBGM;
     public AudioSource mSeButtonSwitch;
+    public AudioSource mSeButtonOK;
     //Game Audio Sources
     public AudioSource mBossRayShot;
     public AudioSource mBossTan01;
@@ -24,25 +25,6 @@ public class AudioControl : PresistentSingleton<AudioControl> {
         mBGMVolume = 1f;
         mSEVolume = 1f;
     }
-    //Volume set
-    public void UpdateBGMVolume() {
-        Slider SliderBGMVolume = GameObject.Find("SliderBGMVolume").GetComponent<Slider>();
-        if (SliderBGMVolume == null) {
-            Debug.Log("BGMVolume not found!");
-        }
-        else {
-            mBGMVolume = SliderBGMVolume.value;
-        }
-    }
-    public void UpdateSEVolume() {
-        Slider SliderSEVolume = GameObject.Find("SliderSEVolume").GetComponent<Slider>();
-        if (SliderSEVolume == null) {
-            Debug.Log("SEVolume not found!");
-        }
-        else {
-            mSEVolume = SliderSEVolume.value;
-        }
-    }
     public void GetAudioSource() {
         mBossRayShot = GameObject.Find("ASRayShot").GetComponent<AudioSource>();
         mBossTan01 = GameObject.Find("ASTan01").GetComponent<AudioSource>();
@@ -55,8 +37,6 @@ public class AudioControl : PresistentSingleton<AudioControl> {
         Debug.Log("Update Options");
         mSeBGM.volume = mBGMVolume;
         mSePause.volume = mSEVolume;
-        GameObject.Find("SliderBGMVolume").GetComponent<Slider>().value = mBGMVolume;
-        GameObject.Find("SliderSEVolume").GetComponent<Slider>().value = mSEVolume;
     }
     public void PlayPause() {
         mSePause.Play();
@@ -72,6 +52,9 @@ public class AudioControl : PresistentSingleton<AudioControl> {
     }
     public void PlayButtonSwitch() {
         mSeButtonSwitch.PlayOneShot(mSeButtonSwitch.clip, mSEVolume);
+    }
+    public void PlayButtonOK() {
+        mSeButtonOK.PlayOneShot(mSeButtonOK.clip, mSEVolume);
     }
     public void PlayBossRayShot() {
         mBossRayShot.PlayOneShot(mBossRayShot.clip, mSEVolume);

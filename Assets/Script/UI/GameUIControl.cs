@@ -7,7 +7,7 @@ using TMPro;
 
 public class GameUIControl : Singleton<GameUIControl>
 {
-    public Button btnReturnToGame;
+    public Button btnReturnToGame, btnLostFirstSelect, btnWinFirstSelect;
     public GameObject CanvasPause;
     public GameObject CanvasWin;
     public GameObject CanvasLost;
@@ -95,6 +95,9 @@ public class GameUIControl : Singleton<GameUIControl>
             if (index_obj + 1 > GameData.Instance.numPlayer) {
                 obj.SetActive(false);
             }
+            else {
+                obj.SetActive(true);
+            }
             index_obj++;
         }
     }
@@ -103,6 +106,9 @@ public class GameUIControl : Singleton<GameUIControl>
         foreach (GameObject obj in arrBomb) {
             if (index_obj + 1 > GameData.Instance.numBomb) {
                 obj.SetActive(false);
+            }
+            else {
+                obj.SetActive(true);
             }
             index_obj++;
         }
@@ -117,9 +123,11 @@ public class GameUIControl : Singleton<GameUIControl>
     }
     public void EnterWin() {
         CanvasWin.SetActive(true);
+        btnWinFirstSelect.Select();
     }
     public void EnterLost() {
         CanvasLost.SetActive(true);
+        btnLostFirstSelect.Select();
     }
     //Text FukaName
     public void FukaNameStart(String aFukaName) {
@@ -137,6 +145,13 @@ public class GameUIControl : Singleton<GameUIControl>
     }
     public void SetTopSlide(float aValue) {
         TopProcessSlider.value = aValue;
+    }
+    //Button Event Trigger
+    public void ButtonSwitch() {
+        AudioControl.Instance.PlayButtonSwitch();
+    }
+    public void ButtonOK() {
+        AudioControl.Instance.PlayButtonOK();
     }
     //Button CanvasLost
     public void BtnLostReturnSelectClicked() {

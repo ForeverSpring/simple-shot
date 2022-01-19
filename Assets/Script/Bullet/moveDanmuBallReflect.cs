@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveDanmuBallReflect : moveDanmuBall {
-    
-    //TODO:settings类用于初始化所有游戏数值，可用观察者模式
     private int reflectTimes;
 
     void InitSettings() {

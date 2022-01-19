@@ -36,7 +36,6 @@ public class GameData : Singleton<GameData> {
         numScore += score;
     }
     public void PlayerBeShot() {
-        GameUIControl.Instance.UpdatePlayerLife();
         if (numPlayer > 0) {
             setPlayer(numPlayer - 1);
             setBomb(GameSettings.Instance.playerStartBombNum);
@@ -44,5 +43,7 @@ public class GameData : Singleton<GameData> {
         else if (numPlayer == 0) {
             GameControl.Instance.gameover = true;
         }
+        GameUIControl.Instance.UpdatePlayerLife();
+        GameUIControl.Instance.UpdatePlayerBomb();
     }
 }

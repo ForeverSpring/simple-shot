@@ -17,6 +17,7 @@ public class GameControl : Singleton<GameControl> {
     private bool Pause;
     private bool isRuningFuka;
     private bool BreakFuka;
+    private bool isCheckingGameState;
     private float PauseRate = 1.5f;
     private float nextPause = 0f;
     private int posFuka;
@@ -34,6 +35,7 @@ public class GameControl : Singleton<GameControl> {
         gameover = false;
         isRuningFuka = false;
         Pause = false;
+        isCheckingGameState = true;
         arrFuka.Add(FukaManager.GetComponent<Stage1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_2>());
@@ -46,7 +48,9 @@ public class GameControl : Singleton<GameControl> {
     }
 
     void Update() {
-        CheckGameState();
+        if (isCheckingGameState) {
+            CheckGameState();
+        }
         //TODO: Refacor system of game process  EXAMPLE: updateProcess()
         if (Input.GetKey(KeyCode.Escape) && !gameover && Time.unscaledTime >= nextPause) {
             nextPause = Time.unscaledTime + PauseRate;
@@ -74,9 +78,11 @@ public class GameControl : Singleton<GameControl> {
     private void CheckGameState() {
         if (gameover) {
             GameOver();
+            isCheckingGameState = false;
         }
         if (gamewin) {
             GameWin();
+            isCheckingGameState = false;
         }
     }
     public Fuka GetRunningFuka() {
