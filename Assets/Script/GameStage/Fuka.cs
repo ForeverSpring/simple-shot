@@ -6,8 +6,6 @@ public abstract class Fuka : MonoBehaviour
 {
     //TODO:工厂模式创建弹幕
     public GameObject gameobjBoss;
-    public GameObject gameobjDanmuBall;
-    public GameObject gameobjDanmuBallReflect;
     public Rigidbody rbBoss;
     public texStage textStage;
     public bool running;
@@ -21,8 +19,6 @@ public abstract class Fuka : MonoBehaviour
     }
     void Awake() {
         gameobjBoss = GameObject.Find("Boss");
-        gameobjDanmuBall = (GameObject)Resources.Load("Prefab/danmuBall");
-        gameobjDanmuBallReflect = (GameObject)Resources.Load("Prefab/danmuBallReflect");
         rbBoss = gameobjBoss.GetComponent<Rigidbody>();
         textStage = GameObject.Find("texStage").GetComponent<texStage>();
         fukaType = FukaType.NULL;

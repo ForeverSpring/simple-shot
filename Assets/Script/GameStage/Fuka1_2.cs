@@ -54,14 +54,14 @@ public class Fuka1_2 : Fuka {
             List<GameObject> lis = new List<GameObject>();
             List<GameObject> lis2 = new List<GameObject>();
             for (int i = 0; i < 10; i++) {
-                GameObject temp = Instantiate(gameobjDanmuBallReflect);
+                GameObject temp = DanmuFactory.Instance.GetBlueBallReflectDanmu();
                 lis.Add(temp);
                 DanmuPool.Instance.mArrDanmu.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 36 * i);
             }
             for (int i = 0; i < 10; i++) {
-                GameObject temp = Instantiate(gameobjDanmuBallReflect);
+                GameObject temp = DanmuFactory.Instance.GetBlueBallReflectDanmu();
                 DanmuPool.Instance.mArrDanmu.Add(temp);
                 lis2.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
@@ -80,10 +80,11 @@ public class Fuka1_2 : Fuka {
             foreach (GameObject temp in lis) {
                 temp.GetComponent<moveDanmuBallReflect>().SetSpeed(speed_round);
                 temp.transform.up = GameObject.Find("Player").transform.position - rbBoss.transform.position;
+                //temp.transform.rotation = new Quaternion();
             }
             AudioControl.Instance.PlayBossTan01();
             for (int i = 0; i < 60; i++) {
-                GameObject temp = Instantiate(gameobjDanmuBall);
+                GameObject temp = DanmuFactory.Instance.GetGreenBallDanmu();
                 temp.transform.position = gameobjBoss.transform.position;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(3 + Random.Range(0f, 3f));
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * (90 + Random.Range(0f, 180f)));
@@ -92,6 +93,7 @@ public class Fuka1_2 : Fuka {
             foreach (GameObject temp in lis2) {
                 temp.GetComponent<moveDanmuBallReflect>().SetSpeed(speed_round);
                 temp.transform.up = GameObject.Find("Player").transform.position - rbBoss.transform.position;
+                //temp.transform.rotation = new Quaternion();
             }
             AudioControl.Instance.PlayBossTan01();
             yield return new WaitForSeconds(1f);

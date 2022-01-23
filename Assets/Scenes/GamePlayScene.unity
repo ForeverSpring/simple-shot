@@ -6556,6 +6556,7 @@ GameObject:
   - component: {fileID: 1762788870}
   - component: {fileID: 1762788871}
   - component: {fileID: 1762788872}
+  - component: {fileID: 1762788873}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -6701,6 +6702,28 @@ MonoBehaviour:
   numPlayer: 0
   numBomb: 0
   numScore: 0
+--- !u!114 &1762788873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762788863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f4741c7dc537a4289720519618c534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redBallDanmu: {fileID: 4350984709814296059, guid: 691f19859761acf409ac5f6506b733fc,
+    type: 3}
+  blueBallDanmu: {fileID: 7284993880061646891, guid: be6daaa7ff7493847ac7e4d652b320b8,
+    type: 3}
+  greenBallDanmu: {fileID: 6667300521545455722, guid: db0fdb9a14f1da34ba5549cfac0865f6,
+    type: 3}
+  redKnifeDanmu: {fileID: 5499455925471087109, guid: 8301b300a6447ef4cac02cdec362ce68,
+    type: 3}
+  blueBallReflectDanmu: {fileID: 0}
+  blueBigBallDanmu: {fileID: 0}
 --- !u!1 &1883368863
 GameObject:
   m_ObjectHideFlags: 0

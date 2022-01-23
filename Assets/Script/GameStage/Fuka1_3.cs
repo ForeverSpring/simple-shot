@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Fuka1_3 : Fuka {
+    //TODO:添加音效，修改循环移动错误
     void Start() {
         fukaName = "自机狙加密集型随机弹";
         fukaType = FukaType.LifeFuka;
@@ -59,11 +60,10 @@ public class Fuka1_3 : Fuka {
             }
             List<GameObject> lis = new List<GameObject>();
             for (int i = 0; i < 5; i++) {
-                GameObject temp = Instantiate(gameobjDanmuBall);
-                DanmuPool.Instance.mArrDanmu.Add(temp);
+                GameObject temp = DanmuFactory.Instance.GetRedBallDanmu();
                 lis.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position;
-                temp.transform.localScale = temp.transform.localScale * 0.5f;
+                //temp.transform.localScale = temp.transform.localScale * 0.5f;
                 temp.GetComponent<moveDanmuBall>().SetSpeed(3);
                 temp.transform.rotation = Quaternion.Euler(temp.transform.forward * 72 * i);
             }
@@ -73,8 +73,7 @@ public class Fuka1_3 : Fuka {
             foreach (GameObject temp in lis) {
                 temp.GetComponent<moveDanmuBall>().SetSpeed(0);
                 for (int i = 0; i < 40; i++) {
-                    GameObject temp1 = Instantiate(gameobjDanmuBall);
-                    DanmuPool.Instance.mArrDanmu.Add(temp1);
+                    GameObject temp1 = DanmuFactory.Instance.GetWhiteSmallBallDanmu();
                     lis1.Add(temp1);
                     temp1.transform.position = temp.transform.position;
                     temp1.transform.localScale = temp.transform.localScale;
@@ -100,7 +99,7 @@ public class Fuka1_3 : Fuka {
             float r = 2f;
             List<GameObject> lis2 = new List<GameObject>();
             for (int i = 0; i < 10; i++) {
-                GameObject temp = Instantiate(gameobjDanmuBall);
+                GameObject temp = DanmuFactory.Instance.GetRedKnifeDanmu();
                 DanmuPool.Instance.mArrDanmu.Add(temp);
                 lis2.Add(temp);
                 temp.transform.position = gameobjBoss.transform.position +
