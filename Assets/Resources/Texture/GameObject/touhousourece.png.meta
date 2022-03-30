@@ -1,0 +1,4372 @@
+fileFormatVersion: 2
+guid: 8035f5ae3ec72db45882d164654a9673
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5197864370186722088
+    second: reimuidle0
+  - first:
+      213: 4471950491898459228
+    second: reimuidle1
+  - first:
+      213: 3742513337718754435
+    second: reimuidle2
+  - first:
+      213: -7052242426008579832
+    second: reimuidle3
+  - first:
+      213: -3638677695190081117
+    second: reimuidle4
+  - first:
+      213: 9036567502981145718
+    second: reimuidle5
+  - first:
+      213: 2596320241540825095
+    second: reimuidle6
+  - first:
+      213: 3934102067007324963
+    second: reimuidle7
+  - first:
+      213: -4784753110805251760
+    second: touhousourece_8
+  - first:
+      213: -8994207660334868703
+    second: touhousourece_9
+  - first:
+      213: -3411574015959447362
+    second: touhousourece_10
+  - first:
+      213: 6794518133172896758
+    second: touhousourece_11
+  - first:
+      213: -1316085022752602247
+    second: touhousourece_12
+  - first:
+      213: -528754088794154636
+    second: touhousourece_13
+  - first:
+      213: -5647164172412266112
+    second: touhousourece_14
+  - first:
+      213: -7542009106943657861
+    second: touhousourece_15
+  - first:
+      213: 7552470715468044012
+    second: reimuleft0
+  - first:
+      213: -8299494973752728317
+    second: reimuleft1
+  - first:
+      213: 8244066294868198125
+    second: reimuleft2
+  - first:
+      213: -273232565162599283
+    second: reimuleft3
+  - first:
+      213: 17773385858825968
+    second: reimuleft4
+  - first:
+      213: -7094089772765908654
+    second: reimuleft5
+  - first:
+      213: 4106115776150329721
+    second: reimuleft6
+  - first:
+      213: -3516548187749349910
+    second: reimuleft7
+  - first:
+      213: 9010604226201834859
+    second: touhousourece_24
+  - first:
+      213: -1741228583020694301
+    second: touhousourece_25
+  - first:
+      213: 3549319638598019789
+    second: touhousourece_26
+  - first:
+      213: 8375049799438764804
+    second: touhousourece_27
+  - first:
+      213: -4079764893280765937
+    second: touhousourece_28
+  - first:
+      213: 6334245550840196414
+    second: touhousourece_29
+  - first:
+      213: 4522964679276766151
+    second: touhousourece_30
+  - first:
+      213: -6600442307763612616
+    second: touhousourece_31
+  - first:
+      213: -890020377981343239
+    second: reimuright0
+  - first:
+      213: 3173969377346430913
+    second: reimuright1
+  - first:
+      213: 8443100125606163627
+    second: reimuright2
+  - first:
+      213: -1116860931072111680
+    second: reimuright3
+  - first:
+      213: -2975065422322658093
+    second: reimuright4
+  - first:
+      213: 5194632133598817619
+    second: reimuright5
+  - first:
+      213: 6053519121861077686
+    second: reimuright6
+  - first:
+      213: 8710436652905868113
+    second: reimuright7
+  - first:
+      213: -8544168252153886218
+    second: touhousourece_40
+  - first:
+      213: 3754558460484613338
+    second: touhousourece_41
+  - first:
+      213: 54700571029560307
+    second: touhousourece_42
+  - first:
+      213: -6469316140373284295
+    second: touhousourece_43
+  - first:
+      213: 2831661737096292077
+    second: touhousourece_44
+  - first:
+      213: 7218863056404872376
+    second: touhousourece_45
+  - first:
+      213: -8650833016017795063
+    second: touhousourece_46
+  - first:
+      213: 1656857113307399848
+    second: touhousourece_47
+  - first:
+      213: 1775813322714436538
+    second: touhousourece_48
+  - first:
+      213: -7958580154016909234
+    second: touhousourece_49
+  - first:
+      213: -1712147550833875315
+    second: touhousourece_50
+  - first:
+      213: 4859015717074176730
+    second: touhousourece_51
+  - first:
+      213: -4479095446536894665
+    second: touhousourece_52
+  - first:
+      213: 5250837715880126916
+    second: touhousourece_53
+  - first:
+      213: -7258788797832954695
+    second: touhousourece_54
+  - first:
+      213: -7953374982962305288
+    second: touhousourece_55
+  - first:
+      213: -7621396465208106485
+    second: touhousourece_56
+  - first:
+      213: 6472140032011833424
+    second: touhousourece_57
+  - first:
+      213: 3328491737642912618
+    second: touhousourece_58
+  - first:
+      213: -2976877916131532036
+    second: touhousourece_59
+  - first:
+      213: -4319118627482635596
+    second: touhousourece_60
+  - first:
+      213: -9124464488002436372
+    second: touhousourece_61
+  - first:
+      213: 7372293604472841783
+    second: touhousourece_62
+  - first:
+      213: -6306237098116351172
+    second: touhousourece_63
+  - first:
+      213: 2894611367252270326
+    second: touhousourece_64
+  - first:
+      213: 955207638912309672
+    second: touhousourece_65
+  - first:
+      213: 6212593389146717012
+    second: touhousourece_66
+  - first:
+      213: 3018607824223224412
+    second: touhousourece_67
+  - first:
+      213: -9068207386530355421
+    second: touhousourece_68
+  - first:
+      213: -1057883157050324771
+    second: touhousourece_69
+  - first:
+      213: -722083318144628521
+    second: touhousourece_70
+  - first:
+      213: 1167897859555056058
+    second: touhousourece_71
+  - first:
+      213: 1985757784121462936
+    second: touhousourece_72
+  - first:
+      213: 7649498611232565285
+    second: touhousourece_73
+  - first:
+      213: 8357526401909780482
+    second: touhousourece_74
+  - first:
+      213: 6926772005745628663
+    second: touhousourece_75
+  - first:
+      213: -3578539192261274635
+    second: touhousourece_76
+  - first:
+      213: 2448580216389220652
+    second: touhousourece_77
+  - first:
+      213: 4256215139176215606
+    second: touhousourece_78
+  - first:
+      213: 7987800241507872668
+    second: touhousourece_79
+  - first:
+      213: -2739728434176145134
+    second: touhousourece_80
+  - first:
+      213: -3802193182192977893
+    second: touhousourece_81
+  - first:
+      213: 2059784259330482900
+    second: touhousourece_82
+  - first:
+      213: -3164292481142593292
+    second: touhousourece_83
+  - first:
+      213: -4003753502459886281
+    second: touhousourece_84
+  - first:
+      213: 966689264637545180
+    second: touhousourece_85
+  - first:
+      213: 1623393987758976370
+    second: touhousourece_86
+  - first:
+      213: -7625106843034608458
+    second: touhousourece_87
+  - first:
+      213: 2810650593548733192
+    second: touhousourece_88
+  - first:
+      213: -6823808752083810030
+    second: touhousourece_89
+  - first:
+      213: 2994443229051117014
+    second: touhousourece_90
+  - first:
+      213: -6335969710962390237
+    second: touhousourece_91
+  - first:
+      213: 7288758086560094040
+    second: touhousourece_92
+  - first:
+      213: -7928249141446825714
+    second: touhousourece_93
+  - first:
+      213: -2359257819609124143
+    second: touhousourece_94
+  - first:
+      213: -7786215641841191556
+    second: touhousourece_95
+  - first:
+      213: -3591712790988233242
+    second: touhousourece_96
+  - first:
+      213: 2833418041384507428
+    second: touhousourece_97
+  - first:
+      213: -2492339596283519045
+    second: touhousourece_98
+  - first:
+      213: 7296155537136816278
+    second: touhousourece_99
+  - first:
+      213: 2058933440670676421
+    second: touhousourece_100
+  - first:
+      213: 6035874688858026660
+    second: touhousourece_101
+  - first:
+      213: 4224000631706143791
+    second: touhousourece_102
+  - first:
+      213: -7462730050848807463
+    second: touhousourece_103
+  - first:
+      213: 6701624459043199419
+    second: touhousourece_104
+  - first:
+      213: -1428099712645750546
+    second: touhousourece_105
+  - first:
+      213: 1492690562806261189
+    second: touhousourece_106
+  - first:
+      213: 2948008837366483914
+    second: touhousourece_107
+  - first:
+      213: 7870475834142003800
+    second: touhousourece_108
+  - first:
+      213: 635761613681641498
+    second: touhousourece_109
+  - first:
+      213: 5286196988372877576
+    second: touhousourece_110
+  - first:
+      213: -3499405124664436515
+    second: touhousourece_111
+  - first:
+      213: 7250471947704140990
+    second: touhousourece_112
+  - first:
+      213: 7688737363915449471
+    second: touhousourece_113
+  - first:
+      213: -6982330277519261130
+    second: touhousourece_114
+  - first:
+      213: 7812070511627495527
+    second: touhousourece_115
+  - first:
+      213: 6004467171487221703
+    second: touhousourece_116
+  - first:
+      213: -2856432423070346670
+    second: touhousourece_117
+  - first:
+      213: 6226490149586297409
+    second: touhousourece_118
+  - first:
+      213: -3501237762201215386
+    second: touhousourece_119
+  - first:
+      213: -6538763836542785855
+    second: touhousourece_120
+  - first:
+      213: 3661149952319060038
+    second: touhousourece_121
+  - first:
+      213: 7181058685747437687
+    second: touhousourece_122
+  - first:
+      213: -6626903975002954410
+    second: touhousourece_123
+  - first:
+      213: 7975212597199208406
+    second: touhousourece_124
+  - first:
+      213: -8642171361053141605
+    second: touhousourece_125
+  - first:
+      213: 4581635782320004412
+    second: touhousourece_126
+  - first:
+      213: -7495630148760746008
+    second: touhousourece_127
+  - first:
+      213: -6212458267951050952
+    second: touhousourece_128
+  - first:
+      213: -56658901284734067
+    second: touhousourece_129
+  - first:
+      213: 8041948443616006252
+    second: touhousourece_130
+  - first:
+      213: -997719337472168103
+    second: touhousourece_131
+  - first:
+      213: -7041993668189309493
+    second: touhousourece_132
+  - first:
+      213: -2015302329982672154
+    second: touhousourece_133
+  - first:
+      213: -681907108013631336
+    second: touhousourece_134
+  - first:
+      213: -5733728919383878505
+    second: touhousourece_135
+  - first:
+      213: -7609520693055614847
+    second: touhousourece_136
+  - first:
+      213: 2789264415810081948
+    second: touhousourece_137
+  - first:
+      213: 6799975770475231598
+    second: touhousourece_138
+  - first:
+      213: -690766354248993686
+    second: touhousourece_139
+  - first:
+      213: 434356649502615884
+    second: touhousourece_140
+  - first:
+      213: -6916090364704719951
+    second: touhousourece_141
+  - first:
+      213: -6410701791841526595
+    second: touhousourece_142
+  - first:
+      213: 758681117107164438
+    second: touhousourece_143
+  - first:
+      213: -6904694729196806284
+    second: touhousourece_144
+  - first:
+      213: -1434876005903315122
+    second: touhousourece_145
+  - first:
+      213: 3484451809054136228
+    second: touhousourece_146
+  - first:
+      213: -6438551727075775172
+    second: touhousourece_147
+  - first:
+      213: 977416441960273180
+    second: touhousourece_148
+  - first:
+      213: -2008552403644591797
+    second: touhousourece_149
+  - first:
+      213: -2228806540752646465
+    second: touhousourece_150
+  - first:
+      213: -1257246166400925508
+    second: touhousourece_151
+  - first:
+      213: 7132777919117505217
+    second: touhousourece_152
+  - first:
+      213: 289329730378652833
+    second: touhousourece_153
+  - first:
+      213: 2843077588928225761
+    second: touhousourece_154
+  - first:
+      213: 1997132835653217716
+    second: touhousourece_155
+  - first:
+      213: -2724772705057351994
+    second: touhousourece_156
+  - first:
+      213: 4269561935606642449
+    second: touhousourece_157
+  - first:
+      213: -1491210878533541093
+    second: touhousourece_158
+  - first:
+      213: 1496720346308651510
+    second: touhousourece_159
+  - first:
+      213: 5186771883454879330
+    second: touhousourece_160
+  - first:
+      213: 6378260063451626924
+    second: touhousourece_161
+  - first:
+      213: 6689947627883181695
+    second: touhousourece_162
+  - first:
+      213: -6217619200189718616
+    second: touhousourece_163
+  - first:
+      213: -2980372022024124395
+    second: touhousourece_164
+  - first:
+      213: 2459761306578551916
+    second: touhousourece_165
+  - first:
+      213: 7962089221649801697
+    second: touhousourece_166
+  - first:
+      213: -4976253915326805667
+    second: touhousourece_167
+  - first:
+      213: 2566725511008847253
+    second: touhousourece_168
+  - first:
+      213: -3544855273621549182
+    second: touhousourece_169
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 18, y: 304, z: 503, w: 18}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reimuidle0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 305
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d46c5015e97dd7b0800000000000000
+      internalID: -5197864370186722088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuidle1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 306
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54bdba674f8f0e30800000000000000
+      internalID: 4471950491898459228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuidle2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 306
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c43ed4d0410f330800000000000000
+      internalID: 3742513337718754435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuidle3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 306
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801d1dfb0e6612e90800000000000000
+      internalID: -7052242426008579832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuidle4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 306
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1ee0e2ae1d08dc0800000000000000
+      internalID: -3638677695190081117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuidle5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 306
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674a7042446586d70800000000000000
+      internalID: 9036567502981145718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuidle6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 305
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7008238f08bf70420800000000000000
+      internalID: 2596320241540825095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuidle7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 306
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3230a167cfcb89630800000000000000
+      internalID: 3934102067007324963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 305
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059f18c7564299db0800000000000000
+      internalID: -4784753110805251760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_9
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 305
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12794a949c72e2380800000000000000
+      internalID: -8994207660334868703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_10
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 305
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8c8cdf187a7a0d0800000000000000
+      internalID: -3411574015959447362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 305
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f388b34e3afa4e50800000000000000
+      internalID: 6794518133172896758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 305
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9778e9c05a35cbde0800000000000000
+      internalID: -1316085022752602247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_13
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 305
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47993eb25fc79a8f0800000000000000
+      internalID: -528754088794154636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_14
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 305
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089dd0bea1e31a1b0800000000000000
+      internalID: -5647164172412266112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_15
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 305
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78bcdf2da6655790800000000000000
+      internalID: -7542009106943657861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 257
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6530cd914cfc860800000000000000
+      internalID: 7552470715468044012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 258
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30524524b4542dc80800000000000000
+      internalID: -8299494973752728317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 259
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2c362cd9ec86270800000000000000
+      internalID: 8244066294868198125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 260
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c1a6cfd68453cf0800000000000000
+      internalID: -273232565162599283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 259
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe329edcc42f3000800000000000000
+      internalID: 17773385858825968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 258
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2517e8110fabc8d90800000000000000
+      internalID: -7094089772765908654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 258
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97951141b8adbf830800000000000000
+      internalID: 4106115776150329721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuleft7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 258
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae508a10e06b23fc0800000000000000
+      internalID: -3516548187749349910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_24
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 257
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65d462bdc81c0d70800000000000000
+      internalID: 9010604226201834859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_25
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 257
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e47b4444d9e5d7e0800000000000000
+      internalID: -1741228583020694301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_26
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 258
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcae3fcf767b14130800000000000000
+      internalID: 3549319638598019789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_27
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 258
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b01cf6b672a3470800000000000000
+      internalID: 8375049799438764804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_28
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 258
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08f3e0f173c167c0800000000000000
+      internalID: -4079764893280765937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_29
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 258
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3dade9a4c2c7e750800000000000000
+      internalID: 6334245550840196414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_30
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 258
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c32eef796cc4ce30800000000000000
+      internalID: 4522964679276766151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_31
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 258
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8345a4511b48664a0800000000000000
+      internalID: -6600442307763612616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 209
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f920978e2306a3f0800000000000000
+      internalID: -890020377981343239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 210
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7a3b015543c0c20800000000000000
+      internalID: 3173969377346430913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 210
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4bfcda4daeb2570800000000000000
+      internalID: 8443100125606163627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 211
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb4feb86ec1080f0800000000000000
+      internalID: -1116860931072111680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 211
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d419eec2c176b6d0800000000000000
+      internalID: -2975065422322658093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 210
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dacf5376a071840800000000000000
+      internalID: 5194632133598817619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 210
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba6093819b620450800000000000000
+      internalID: 6053519121861077686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reimuright7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 210
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b2ff66cffa1e870800000000000000
+      internalID: 8710436652905868113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_40
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 209
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9823d5e340d6980800000000000000
+      internalID: -8544168252153886218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_41
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 209
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad47f9df60fda1430800000000000000
+      internalID: 3754558460484613338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_42
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 210
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb5a3921e552c000800000000000000
+      internalID: 54700571029560307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_43
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 210
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a69590f3f5836a0800000000000000
+      internalID: -6469316140373284295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_44
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 210
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6a0bbd8551c4720800000000000000
+      internalID: 2831661737096292077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_45
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 210
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcf33fd3bd8e2460800000000000000
+      internalID: 7218863056404872376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_46
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 210
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908c90db43112f780800000000000000
+      internalID: -8650833016017795063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_47
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 209
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6444224c65ef610800000000000000
+      internalID: 1656857113307399848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 194
+        width: 64
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3dccfeec4f4a810800000000000000
+      internalID: 1775813322714436538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_49
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 192
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48395b24817d8190800000000000000
+      internalID: -7958580154016909234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_50
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 192
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86ed75bfda3d38e0800000000000000
+      internalID: -1712147550833875315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_51
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 192
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada0f3eec01be6340800000000000000
+      internalID: 4859015717074176730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_52
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 201
+        width: 64
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73749123c6e07d1c0800000000000000
+      internalID: -4479095446536894665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_53
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 193
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9224c1519bed840800000000000000
+      internalID: 5250837715880126916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_54
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 192
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcf49d0c0a934b90800000000000000
+      internalID: -7258788797832954695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 201
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6ad0f779fef9190800000000000000
+      internalID: -7953374982962305288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_56
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 203
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b026ad67b4c5b3690800000000000000
+      internalID: -7621396465208106485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_57
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 192
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05096a87119a1d950800000000000000
+      internalID: 6472140032011833424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_58
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 193
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b470ca99d213e20800000000000000
+      internalID: 3328491737642912618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_59
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 193
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf26645be4100b6d0800000000000000
+      internalID: -2976877916131532036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_60
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 193
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2ff12fd786f04c0800000000000000
+      internalID: -4319118627482635596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_61
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 193
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2c2f244e36f5180800000000000000
+      internalID: -9124464488002436372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 161
+        width: 97
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736ec7229f5af4660800000000000000
+      internalID: 7372293604472841783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_63
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 192
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b726965cebb78a0800000000000000
+      internalID: -6306237098116351172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 177
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc11e3c3b9bb2820800000000000000
+      internalID: 2894611367252270326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 177
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a99b146944914d00800000000000000
+      internalID: 955207638912309672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 47
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bb70e85c0973650800000000000000
+      internalID: 6212593389146717012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 177
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c524a07a2df34e920800000000000000
+      internalID: 3018607824223224412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_68
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 96
+        width: 256
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327e8486d61472280800000000000000
+      internalID: -9068207386530355421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_69
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 162
+        width: 64
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd88522afd4a151f0800000000000000
+      internalID: -1057883157050324771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_70
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 169
+        width: 56
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d801c34c05aaf5f0800000000000000
+      internalID: -722083318144628521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_71
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 98
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9d7bc5ae4353010800000000000000
+      internalID: 1167897859555056058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_72
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 98
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890d6840f24de8b10800000000000000
+      internalID: 1985757784121462936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_73
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 98
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5286c58457a782a60800000000000000
+      internalID: 7649498611232565285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_74
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 98
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200f7c28bf5ebf370800000000000000
+      internalID: 8357526401909780482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_75
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 62
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5969a8076d02060800000000000000
+      internalID: 6926772005745628663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_76
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 62
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f314768099765ec0800000000000000
+      internalID: -3578539192261274635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_77
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 58
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29bde1dbba1bf120800000000000000
+      internalID: 2448580216389220652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_78
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 62
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634fc326e1d111b30800000000000000
+      internalID: 4256215139176215606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_79
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 62
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f2bdb9ffd5ade60800000000000000
+      internalID: 7987800241507872668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_80
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 62
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219c4eb31878af9d0800000000000000
+      internalID: -2739728434176145134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_81
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 62
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18b9f71275eb3bc0800000000000000
+      internalID: -3802193182192977893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_82
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 62
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2a553eed2d59c10800000000000000
+      internalID: 2059784259330482900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_83
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 62
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f86e08e0cc2614d0800000000000000
+      internalID: -3164292481142593292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_84
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 62
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73507adf66fcf68c0800000000000000
+      internalID: -4003753502459886281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_85
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 62
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda87e2b3ce5a6d00800000000000000
+      internalID: 966689264637545180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_86
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 62
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27de0e21b34778610800000000000000
+      internalID: 1623393987758976370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_87
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 62
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc958ec9bd2e2690800000000000000
+      internalID: -7625106843034608458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_88
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 62
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b8638c2df610720800000000000000
+      internalID: 2810650593548733192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_89
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 58
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219c7d41816fc41a0800000000000000
+      internalID: -6823808752083810030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_90
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 62
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd5aa760466e8920800000000000000
+      internalID: 2994443229051117014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_91
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 62
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bc3760e1d1218a0800000000000000
+      internalID: -6335969710962390237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_92
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 62
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8579b2bbcded62560800000000000000
+      internalID: 7288758086560094040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_93
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 62
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e092449596339f190800000000000000
+      internalID: -7928249141446825714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_94
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 62
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2b2a0538b324fd0800000000000000
+      internalID: -2359257819609124143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_95
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 62
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75377b702ec1f390800000000000000
+      internalID: -7786215641841191556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_96
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 62
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e56bed0f3ca72ec0800000000000000
+      internalID: -3591712790988233242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_97
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 62
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42818e052b2525720800000000000000
+      internalID: 2833418041384507428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_98
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 62
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf51e7975e696dd0800000000000000
+      internalID: -2492339596283519045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_99
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 58
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6901a09edc6214560800000000000000
+      internalID: 7296155537136816278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_100
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 62
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5395b3e0dc29c10800000000000000
+      internalID: 2058933440670676421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_101
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 62
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a27722dc0cb3c350800000000000000
+      internalID: 6035874688858026660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 62
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ccedfd13aae9a30800000000000000
+      internalID: 4224000631706143791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_103
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 62
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d52688de8e0f6890800000000000000
+      internalID: -7462730050848807463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_104
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 62
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9d65350f3f00d50800000000000000
+      internalID: 6701624459043199419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_105
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 62
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0a9e3b0ee5e2ce0800000000000000
+      internalID: -1428099712645750546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_106
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 62
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c525a3882a17b410800000000000000
+      internalID: 1492690562806261189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_107
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 62
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb01f91b6e69e820800000000000000
+      internalID: 2948008837366483914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_108
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 62
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8529453521c893d60800000000000000
+      internalID: 7870475834142003800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_109
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 62
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18c259b1dda2d800800000000000000
+      internalID: 635761613681641498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_110
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 62
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80184b847285c5940800000000000000
+      internalID: 5286196988372877576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_111
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 40
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8d13b649d9f6fc0800000000000000
+      internalID: -3499405124664436515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_112
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb407d062d9de9460800000000000000
+      internalID: 7250471947704140990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_113
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 40
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74247355e1e3ba60800000000000000
+      internalID: 7688737363915449471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_114
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 40
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63282084b97c91f90800000000000000
+      internalID: -6982330277519261130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_115
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7686cdd7dbc0a6c60800000000000000
+      internalID: 7812070511627495527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_116
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 40
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c78df55417245350800000000000000
+      internalID: 6004467171487221703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_117
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252dbf168d9eb58d0800000000000000
+      internalID: -2856432423070346670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_118
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 40
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1426f8b3dcfe86650800000000000000
+      internalID: 6226490149586297409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_119
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 40
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e10dd3eca196fc0800000000000000
+      internalID: -3501237762201215386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_120
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 40
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c662bc3fe4a145a0800000000000000
+      internalID: -6538763836542785855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_121
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 40
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6487a69eb740fc230800000000000000
+      internalID: 3661149952319060038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_122
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 37
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770a53be3de38a360800000000000000
+      internalID: 7181058685747437687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_123
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 40
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655235112f18804a0800000000000000
+      internalID: -6626903975002954410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_124
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 36
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df77484a95adae60800000000000000
+      internalID: 7975212597199208406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_125
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 36
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b959f507fe6d01880800000000000000
+      internalID: -8642171361053141605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_126
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d176f287d359f30800000000000000
+      internalID: 4581635782320004412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_127
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 40
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7486fd71c2af790800000000000000
+      internalID: -7495630148760746008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_128
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 40
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fc6dcce1ae8c9a0800000000000000
+      internalID: -6212458267951050952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_129
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 36
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b3f8b8705b63ff0800000000000000
+      internalID: -56658901284734067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_130
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 40
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60dcbb508dba9f60800000000000000
+      internalID: 8041948443616006252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_131
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 40
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fee687c836722f0800000000000000
+      internalID: -997719337472168103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_132
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 36
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5b601a110d54e90800000000000000
+      internalID: -7041993668189309493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_133
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 36
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2ad5a55353804e0800000000000000
+      internalID: -2015302329982672154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_134
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898980129116986f0800000000000000
+      internalID: -681907108013631336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_135
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 40
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7945db92de3bd60b0800000000000000
+      internalID: -5733728919383878505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_136
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 40
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1809f632f3d856690800000000000000
+      internalID: -7609520693055614847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_137
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 18
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c945ff0453575b620800000000000000
+      internalID: 2789264415810081948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_138
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 18
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6970787fed5e5e50800000000000000
+      internalID: 6799975770475231598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_139
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64723029a7e966f0800000000000000
+      internalID: -690766354248993686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_140
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 18
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49ae674215270600800000000000000
+      internalID: 434356649502615884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_141
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 18
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbf541d47c1500a0800000000000000
+      internalID: -6916090364704719951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_142
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 18
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc53588fac9807a0800000000000000
+      internalID: -6410701791841526595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_143
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 18
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61518f2d470678a00800000000000000
+      internalID: 758681117107164438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_144
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 18
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f56b7f9b89d20a0800000000000000
+      internalID: -6904694729196806284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_145
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 18
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fc66bffdb461ce0800000000000000
+      internalID: -1434876005903315122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_146
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 18
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a793ab75724b5030800000000000000
+      internalID: 3484451809054136228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_147
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 18
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dabaf215ba5a6a0800000000000000
+      internalID: -6438551727075775172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_148
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 18
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c151bac431b709d00800000000000000
+      internalID: 977416441960273180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_149
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 18
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41d10c0b303024e0800000000000000
+      internalID: -2008552403644591797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_150
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 18
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe0f598240b111e0800000000000000
+      internalID: -2228806540752646465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_151
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 18
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb08378d54d5d8ee0800000000000000
+      internalID: -1257246166400925508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_152
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2bfb2f9b7bcf260800000000000000
+      internalID: 7132777919117505217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_153
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 18
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acdd2a5bd7e30400800000000000000
+      internalID: 289329730378652833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_154
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 18
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1e0fcf004a47720800000000000000
+      internalID: 2843077588928225761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_155
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 18
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bde0669bbd37bb10800000000000000
+      internalID: 1997132835653217716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_156
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 18
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6506549a9af2ad0800000000000000
+      internalID: -2724772705057351994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_157
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 18
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117fc5695f7804b30800000000000000
+      internalID: 4269561935606642449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_158
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 18
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b136fc35b972e4be0800000000000000
+      internalID: -1491210878533541093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_159
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 14
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9a3d9993b65c410800000000000000
+      internalID: 1496720346308651510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_160
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 18
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266df4c1c8d1bf740800000000000000
+      internalID: 5186771883454879330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_161
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 18
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad3817fbb1248850800000000000000
+      internalID: 6378260063451626924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_162
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 18
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76b1f53ce777dc50800000000000000
+      internalID: 6689947627883181695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_163
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 18
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af1b00a74496b9a0800000000000000
+      internalID: -6217619200189718616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_164
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5184db8cf6793a6d0800000000000000
+      internalID: -2980372022024124395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_165
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 18
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c648dde30e3d22220800000000000000
+      internalID: 2459761306578551916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_166
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 18
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1276e46f50f7e60800000000000000
+      internalID: 7962089221649801697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_167
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 18
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d598cc8ed6bc0fab0800000000000000
+      internalID: -4976253915326805667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_168
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5958d9fc047de9320800000000000000
+      internalID: 2566725511008847253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: touhousourece_169
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 18
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f0e9bf8e42ecec0800000000000000
+      internalID: -3544855273621549182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      touhousourece_95: -7786215641841191556
+      touhousourece_56: -7621396465208106485
+      touhousourece_65: 955207638912309672
+      touhousourece_30: 4522964679276766151
+      touhousourece_58: 3328491737642912618
+      touhousourece_107: 2948008837366483914
+      reimuidle6: 2596320241540825095
+      touhousourece_145: -1434876005903315122
+      reimuidle2: 3742513337718754435
+      reimuidle7: 3934102067007324963
+      reimuleft3: -273232565162599283
+      touhousourece_132: -7041993668189309493
+      reimuidle0: -5197864370186722088
+      touhousourece_88: 2810650593548733192
+      touhousourece_96: -3591712790988233242
+      touhousourece_142: -6410701791841526595
+      touhousourece_26: 3549319638598019789
+      touhousourece_104: 6701624459043199419
+      touhousourece_113: 7688737363915449471
+      touhousourece_69: -1057883157050324771
+      touhousourece_158: -1491210878533541093
+      reimuleft5: -7094089772765908654
+      touhousourece_94: -2359257819609124143
+      reimuright4: -2975065422322658093
+      touhousourece_61: -9124464488002436372
+      touhousourece_76: -3578539192261274635
+      touhousourece_115: 7812070511627495527
+      touhousourece_124: 7975212597199208406
+      touhousourece_48: 1775813322714436538
+      touhousourece_90: 2994443229051117014
+      touhousourece_161: 6378260063451626924
+      touhousourece_163: -6217619200189718616
+      touhousourece_45: 7218863056404872376
+      touhousourece_85: 966689264637545180
+      touhousourece_123: -6626903975002954410
+      touhousourece_51: 4859015717074176730
+      touhousourece_136: -7609520693055614847
+      touhousourece_141: -6916090364704719951
+      touhousourece_28: -4079764893280765937
+      reimuleft0: 7552470715468044012
+      reimuleft7: -3516548187749349910
+      touhousourece_68: -9068207386530355421
+      touhousourece_126: 4581635782320004412
+      reimuidle5: 9036567502981145718
+      touhousourece_54: -7258788797832954695
+      touhousourece_130: 8041948443616006252
+      reimuidle1: 4471950491898459228
+      touhousourece_43: -6469316140373284295
+      touhousourece_125: -8642171361053141605
+      touhousourece_151: -1257246166400925508
+      touhousourece_40: -8544168252153886218
+      touhousourece_118: 6226490149586297409
+      touhousourece_57: 6472140032011833424
+      touhousourece_71: 1167897859555056058
+      touhousourece_127: -7495630148760746008
+      touhousourece_128: -6212458267951050952
+      touhousourece_109: 635761613681641498
+      touhousourece_166: 7962089221649801697
+      touhousourece_86: 1623393987758976370
+      touhousourece_89: -6823808752083810030
+      reimuidle4: -3638677695190081117
+      touhousourece_138: 6799975770475231598
+      touhousourece_79: 7987800241507872668
+      touhousourece_72: 1985757784121462936
+      reimuright0: -890020377981343239
+      touhousourece_112: 7250471947704140990
+      touhousourece_157: 4269561935606642449
+      touhousourece_92: 7288758086560094040
+      touhousourece_149: -2008552403644591797
+      touhousourece_135: -5733728919383878505
+      touhousourece_116: 6004467171487221703
+      touhousourece_27: 8375049799438764804
+      touhousourece_83: -3164292481142593292
+      touhousourece_119: -3501237762201215386
+      touhousourece_140: 434356649502615884
+      touhousourece_25: -1741228583020694301
+      reimuright7: 8710436652905868113
+      touhousourece_93: -7928249141446825714
+      touhousourece_42: 54700571029560307
+      touhousourece_134: -681907108013631336
+      touhousourece_64: 2894611367252270326
+      touhousourece_102: 4224000631706143791
+      touhousourece_165: 2459761306578551916
+      touhousourece_15: -7542009106943657861
+      touhousourece_77: 2448580216389220652
+      touhousourece_144: -6904694729196806284
+      reimuleft2: 8244066294868198125
+      touhousourece_155: 1997132835653217716
+      reimuright1: 3173969377346430913
+      touhousourece_53: 5250837715880126916
+      touhousourece_84: -4003753502459886281
+      touhousourece_167: -4976253915326805667
+      touhousourece_143: 758681117107164438
+      reimuidle3: -7052242426008579832
+      touhousourece_13: -528754088794154636
+      touhousourece_75: 6926772005745628663
+      touhousourece_100: 2058933440670676421
+      touhousourece_160: 5186771883454879330
+      touhousourece_164: -2980372022024124395
+      touhousourece_131: -997719337472168103
+      touhousourece_137: 2789264415810081948
+      touhousourece_101: 6035874688858026660
+      touhousourece_103: -7462730050848807463
+      touhousourece_106: 1492690562806261189
+      touhousourece_11: 6794518133172896758
+      touhousourece_73: 7649498611232565285
+      touhousourece_98: -2492339596283519045
+      touhousourece_108: 7870475834142003800
+      touhousourece_162: 6689947627883181695
+      touhousourece_117: -2856432423070346670
+      reimuleft1: -8299494973752728317
+      touhousourece_99: 7296155537136816278
+      reimuleft6: 4106115776150329721
+      touhousourece_120: -6538763836542785855
+      touhousourece_169: -3544855273621549182
+      touhousourece_24: 9010604226201834859
+      touhousourece_129: -56658901284734067
+      touhousourece_29: 6334245550840196414
+      touhousourece_110: 5286196988372877576
+      touhousourece_62: 7372293604472841783
+      touhousourece_114: -6982330277519261130
+      touhousourece_159: 1496720346308651510
+      touhousourece_60: -4319118627482635596
+      touhousourece_156: -2724772705057351994
+      touhousourece_168: 2566725511008847253
+      reimuright6: 6053519121861077686
+      touhousourece_46: -8650833016017795063
+      touhousourece_10: -3411574015959447362
+      touhousourece_49: -7958580154016909234
+      touhousourece_97: 2833418041384507428
+      touhousourece_81: -3802193182192977893
+      touhousourece_139: -690766354248993686
+      touhousourece_67: 3018607824223224412
+      touhousourece_31: -6600442307763612616
+      touhousourece_9: -8994207660334868703
+      touhousourece_146: 3484451809054136228
+      touhousourece_147: -6438551727075775172
+      touhousourece_80: -2739728434176145134
+      touhousourece_70: -722083318144628521
+      touhousourece_12: -1316085022752602247
+      touhousourece_150: -2228806540752646465
+      touhousourece_153: 289329730378652833
+      touhousourece_148: 977416441960273180
+      touhousourece_8: -4784753110805251760
+      touhousourece_44: 2831661737096292077
+      touhousourece_121: 3661149952319060038
+      touhousourece_63: -6306237098116351172
+      touhousourece_47: 1656857113307399848
+      touhousourece_59: -2976877916131532036
+      reimuright5: 5194632133598817619
+      touhousourece_50: -1712147550833875315
+      touhousourece_87: -7625106843034608458
+      touhousourece_154: 2843077588928225761
+      touhousourece_82: 2059784259330482900
+      touhousourece_78: 4256215139176215606
+      touhousourece_122: 7181058685747437687
+      touhousourece_55: -7953374982962305288
+      touhousourece_152: 7132777919117505217
+      touhousourece_91: -6335969710962390237
+      touhousourece_41: 3754558460484613338
+      reimuright2: 8443100125606163627
+      reimuright3: -1116860931072111680
+      touhousourece_111: -3499405124664436515
+      touhousourece_133: -2015302329982672154
+      touhousourece_66: 6212593389146717012
+      touhousourece_52: -4479095446536894665
+      touhousourece_74: 8357526401909780482
+      touhousourece_105: -1428099712645750546
+      touhousourece_14: -5647164172412266112
+      reimuleft4: 17773385858825968
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

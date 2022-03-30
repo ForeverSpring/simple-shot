@@ -12,7 +12,7 @@ public class GameUIControl : Singleton<GameUIControl>
     public GameObject CanvasWin;
     public GameObject CanvasLost;
     public GameObject CanvasGame;
-    private Slider TopProcessSlider;
+    public Slider TopProcessSlider;
     private Vector3 TopSliderPos;
     public TextMeshProUGUI textFps;
     public Text texPlayer, texBomb, texScore, texFukaName;
@@ -46,7 +46,7 @@ public class GameUIControl : Singleton<GameUIControl>
     void InitPlayerLife() {
         Vector3 firstPos = new Vector3(380, 355, 0);
         int between = 35;
-        GameObject objLife = (GameObject)Resources.Load("Prefab/life");
+        GameObject objLife = (GameObject)Resources.Load("Prefab/UI/life");
         for (int i = 0; i < GameData.Instance.numPlayer; i++) {
             GameObject life = Instantiate(objLife, CanvasGame.transform);
             life.gameObject.name = "life" + i;
@@ -58,7 +58,7 @@ public class GameUIControl : Singleton<GameUIControl>
     void InitPlayerBomb() {
         Vector3 firstPos = new Vector3(380, 305, 0);
         int between = 35;
-        GameObject objBomb = (GameObject)Resources.Load("Prefab/bomb");
+        GameObject objBomb = (GameObject)Resources.Load("Prefab/UI/bomb");
         for (int i = 0; i < GameData.Instance.numBomb; i++) {
             GameObject bomb = Instantiate(objBomb, CanvasGame.transform);
             bomb.gameObject.name = "bomb" + i;
@@ -69,7 +69,7 @@ public class GameUIControl : Singleton<GameUIControl>
     }
     //Update function
     void UpdateDebugText() {
-        DecisionPoint decisionPoint = GameObject.Find("DecisionPoint").GetComponent<DecisionPoint>();
+        DecisionPoint decisionPoint = GameObject.Find("Player").GetComponent<DecisionPoint>();
         string ret = "Debug\n";
         if (decisionPoint.isMuteki())
             ret += "player state: MUTEKI\n";
@@ -86,7 +86,7 @@ public class GameUIControl : Singleton<GameUIControl>
     }
     void UpdateDataText() {
         texPlayer.text = "Player  " + GameData.Instance.numPlayer;
-        texBomb.text = "Bomb  " + GameData.Instance.numBomb;
+        texBomb.text = "Spell  " + GameData.Instance.numBomb;
         texScore.text = "Score  " + GameData.Instance.numScore;
     }
     public void UpdatePlayerLife() {

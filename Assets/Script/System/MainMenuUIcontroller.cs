@@ -8,7 +8,6 @@ public class MainMenuUIcontroller : MonoBehaviour
 {
     public Button btnAnyButton, btnGameStart, btnBGMVolume;
     public GameObject mMainMenu,mOption,mStart;
-    //TODO:改用字符串显示，并添加修改音效
     public TextMeshProUGUI textBGMVolume, textSEVolume;
     private void Update() {
         CheckInput();

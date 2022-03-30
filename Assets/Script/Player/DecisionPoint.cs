@@ -23,8 +23,8 @@ public class DecisionPoint : MonoBehaviour {
         CanBeShot = true;
         yield return null;
     }
-
-    void OnTriggerEnter(Collider other) {
+    
+    void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Danmu") {
             //Debug.Log("着弹");
             if (CanBeShot) {

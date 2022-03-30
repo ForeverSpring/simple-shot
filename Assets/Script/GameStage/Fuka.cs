@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class Fuka : MonoBehaviour
 {
-    //TODO:工厂模式创建弹幕
     public GameObject gameobjBoss;
-    public Rigidbody rbBoss;
+    public Rigidbody2D rbBoss;
     public texStage textStage;
     public bool running;
     public string fukaName;
@@ -19,14 +18,14 @@ public abstract class Fuka : MonoBehaviour
     }
     void Awake() {
         gameobjBoss = GameObject.Find("Boss");
-        rbBoss = gameobjBoss.GetComponent<Rigidbody>();
+        rbBoss = gameobjBoss.GetComponent<Rigidbody2D>();
         textStage = GameObject.Find("texStage").GetComponent<texStage>();
         fukaType = FukaType.NULL;
         fukaName = "";
         running = false;
     }
 
-    public abstract void Run();
+    public virtual void Run() { }
 
     /// <summary>
     /// Stop() use method
@@ -34,6 +33,6 @@ public abstract class Fuka : MonoBehaviour
     ///            time type, Stop() in GameController TODO:conbine in one class
     /// use Singal Var in Stop()
     /// </summary>
-    public abstract void Stop();
+    public virtual void Stop() { }
 
 }

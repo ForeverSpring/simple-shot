@@ -2,15 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-static class Boundary {
-    public static float xMin = -5.85f, xMax = 1.9f, yMin = -4.56f, yMax = 4.56f;
-    public static bool InBoundary(Vector3 v) {
-        if (v.x > xMin && v.x < xMax && v.y > yMin && v.y < yMax) {
-            return true;
-        }
-        return false;
-    }
-}
+
 public class GameControl : Singleton<GameControl> {
     public GameObject FukaManager;
     public bool gameover,gamewin;
@@ -36,7 +28,8 @@ public class GameControl : Singleton<GameControl> {
         isRuningFuka = false;
         Pause = false;
         isCheckingGameState = true;
-        arrFuka.Add(FukaManager.GetComponent<Stage1>());
+        //arrFuka.Add(FukaManager.GetComponent<Stage1>());
+        //arrFuka.Add(FukaManager.GetComponent<Stage1Midway>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_1>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_2>());
         arrFuka.Add(FukaManager.GetComponent<Fuka1_3>());

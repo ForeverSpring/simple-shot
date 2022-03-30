@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour {
-    private Rigidbody rb;
+    //TODO:使用状态机模式编写，改用InputSystem。实现玩家无敌时间闪烁效果。
+    private Rigidbody2D rb;
     private float speedPlayerMove1;
     private float speedPlayerMove2;
     private bool inLowSpeed;
@@ -17,6 +18,7 @@ public class PlayerControl : MonoBehaviour {
     public DecisionPoint DecisionPoint;
     public Animator animator;
     void InitSettings() {
+        DecisionPoint = GetComponent<DecisionPoint>();
         speedPlayerMove1 = GameSettings.Instance.playerMoveSpeedHigh;
         speedPlayerMove2 = GameSettings.Instance.playerMoveSpeedLow;
         FireRate = GameSettings.Instance.playerFireRate;
@@ -26,10 +28,10 @@ public class PlayerControl : MonoBehaviour {
     void Start() {
         InitSettings();
         inLowSpeed = false;
-        rb = GetComponent<Rigidbody>();
-        animator = GameObject.Find("PlayerTex").GetComponent<Animator>();
-        normalBullet = (GameObject)Resources.Load("Prefab/BulletPlayer");
-        autoBullet = (GameObject)Resources.Load("Prefab/AutoBulletPlayer");
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        normalBullet = (GameObject)Resources.Load("Prefab/Bullet/BulletPlayer");
+        autoBullet = (GameObject)Resources.Load("Prefab/Bullet/AutoBulletPlayer");
     }
 
     void Update() {
@@ -66,14 +68,14 @@ public class PlayerControl : MonoBehaviour {
             Fire();
         }
         //向量标准化，保证移动速度大小不变
-        Vector3 movement = Vector3.zero;
+        Vector2 movement = Vector2.zero;
         if (moveHorizontal != 0 || moveVertical != 0) {
-            movement = new Vector3(moveHorizontal, moveVertical).normalized;
+            movement = new Vector2(moveHorizontal, moveVertical).normalized;
         }
         animator.SetFloat("left", -movement.x);
         animator.SetFloat("right", movement.x);
         rb.position = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
-        if (movement != Vector3.zero)
+        if (movement != Vector2.zero)
             StartCoroutine(nameof(PlayerPositionLimitCoroutine));
         else
             StopCoroutine(nameof(PlayerPositionLimitCoroutine));
@@ -105,8 +107,7 @@ public class PlayerControl : MonoBehaviour {
         while (true) {
             //限制坐标在边界内
             rb.position = new Vector3(Mathf.Clamp(rb.position.x, Boundary.xMin, Boundary.xMax),
-                                        Mathf.Clamp(rb.position.y, Boundary.yMin, Boundary.yMax),
-                                        0.0f);
+                                        Mathf.Clamp(rb.position.y, Boundary.yMin, Boundary.yMax));
             yield return null;
         }
     }

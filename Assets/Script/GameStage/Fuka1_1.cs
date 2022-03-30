@@ -11,6 +11,7 @@ public class Fuka1_1 : Fuka
     public override void Run() {
         GameUIControl.Instance.SetTopSlideVisiable(false);
         GameUIControl.Instance.FukaNameStart(fukaName);
+        gameobjBoss.SetActive(true);
         StartCoroutine("_Fuka1_1");
     }
 

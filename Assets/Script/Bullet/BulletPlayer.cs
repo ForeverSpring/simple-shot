@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class BulletPlayer : MonoBehaviour
 {
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private float mBulletSpeed;
     private void Awake() {
         mBulletSpeed = GameSettings.Instance.playerBulletSpeed;
     }
     private void Start() {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
     
     private void FixedUpdate() {

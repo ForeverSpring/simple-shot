@@ -18,9 +18,9 @@ public class SceneLoader : Singleton<SceneLoader>
     }
 
     public void ExitGame() {
-        //TODO:buildÊ±É¾³ý
+    #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        
+    #endif
         Application.Quit();
     }
 }

@@ -1,7 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+static class Boundary {
+    //TODO:通过场景中的初始对象设置位置，便于场景整体移动
+    public static float xMin = -5.85f, xMax = 1.9f, yMin = -4.56f, yMax = 4.56f;
+    public static Vector3 ViewPortMid = new Vector3((xMin + xMax) / 2f, (yMin + yMax) / 2f, 0f);
+    public static Vector3 ViewPortLeftTop = new Vector3(xMin, yMax, 0f);
+    public static Vector3 ViewPortRightTop = new Vector3(xMax, yMax, 0f);
+    public static Vector3 ViewPortLeftBottom = new Vector3(xMin, yMin, 0f);
+    public static Vector3 ViewPortRightBottom = new Vector3(xMax, yMin, 0f);
+    public static bool InBoundary(Vector3 v) {
+        if (v.x > xMin && v.x < xMax && v.y > yMin && v.y < yMax) {
+            return true;
+        }
+        return false;
+    }
+}
 public class GameData : Singleton<GameData> {
     [SerializeField] public int numPlayer, numBomb, numScore;
     private void Start() {
@@ -15,6 +27,13 @@ public class GameData : Singleton<GameData> {
         numScore = 0;
         GameUIControl.Instance.UpdatePlayerLife();
         GameUIControl.Instance.UpdatePlayerBomb();
+        if (GameObject.Find("[DOTween]")) {
+            //TODO:修复场景重新加载时动画错误
+#if UNITY_EDITOR
+            Debug.Log("删除DOTween对象");
+#endif
+            Destroy(GameObject.Find("[DOTween]"));
+        }
     }
     public void setBomb(int aNumBomb) {
         numBomb = aNumBomb;

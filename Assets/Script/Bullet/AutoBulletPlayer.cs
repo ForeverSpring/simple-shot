@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AutoBulletPlayer : MonoBehaviour
 {
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private GameObject objBoss;
     private float mBulletSpeed;
     private void Awake() {
@@ -12,7 +12,7 @@ public class AutoBulletPlayer : MonoBehaviour
     }
     private void Start() {
         objBoss = GameObject.Find("Boss");
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate() {
@@ -20,7 +20,12 @@ public class AutoBulletPlayer : MonoBehaviour
     }
 
     private void move() {
-        transform.up = objBoss.transform.position - rb.transform.position;
-        transform.position = transform.position + transform.up * mBulletSpeed * Time.fixedDeltaTime;
+        if (objBoss != null) {
+            transform.up = objBoss.transform.position - rb.transform.position;
+            transform.position = transform.position + transform.up * mBulletSpeed * Time.fixedDeltaTime;
+        }
+        else {
+            transform.position += transform.up * mBulletSpeed * Time.fixedDeltaTime;
+        }
     }
 }

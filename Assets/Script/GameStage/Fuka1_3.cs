@@ -14,6 +14,7 @@ public class Fuka1_3 : Fuka {
         GameControl.Instance.WaitFuka();
         GameUIControl.Instance.SetTopSlideVisiable(true);
         GameUIControl.Instance.FukaNameStart(fukaName);
+        gameobjBoss.SetActive(true);
         FukaProcess.Instance.SetNewProcessData(100);
         StartCoroutine("StartIEnumerator");
     }

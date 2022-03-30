@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveDanmuBall : MonoBehaviour {
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     public float speedDanmuBall { set; get; }
     public float rotateSpeed { set; get; }
     public Vector3 rotateCenter=new Vector3();
     public bool isRotating = false;
 
     void InitSettings() {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         speedDanmuBall = GameSettings.Instance.danmuMoveSpeed;
         rotateSpeed = GameSettings.Instance.danmuRotateSpeed;
     }
