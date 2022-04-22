@@ -25,7 +25,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_2_14;UNITY_2021_2;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_2_14;UNITY_2021_2;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -59,67 +59,124 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\GameStage\Fuka1_2.cs" />
-    <Compile Include="Assets\Script\Input\PlayerInput.cs" />
-    <Compile Include="Assets\Script\UI\texStage.cs" />
-    <Compile Include="Assets\Script\System\GameData.cs" />
-    <Compile Include="Assets\Script\GameStage\Stage1.cs" />
-    <Compile Include="Assets\Script\Bullet\AutoBulletPlayer.cs" />
-    <Compile Include="Assets\Script\Bullet\moveDanmuBallReflect.cs" />
-    <Compile Include="Assets\Script\System\PresistentSingleton.cs" />
-    <Compile Include="Assets\Script\GameStage\Fuka1Finish.cs" />
-    <Compile Include="Assets\Script\System\MainMenuUIcontroller.cs" />
-    <Compile Include="Assets\Script\Bullet\Danmu2D.cs" />
-    <Compile Include="Assets\Script\Player\PlayerControl.cs" />
-    <Compile Include="Assets\Script\UI\GameUIControl.cs" />
-    <Compile Include="Assets\Script\Enemy\Boss.cs" />
-    <Compile Include="Assets\Script\Bullet\BulletPlayer.cs" />
-    <Compile Include="Assets\Script\GameStage\Fuka1_3.cs" />
-    <Compile Include="Assets\Script\System\GameControl.cs" />
-    <Compile Include="Assets\Script\System\DanmuFactory.cs" />
-    <Compile Include="Assets\Script\System\Singleton.cs" />
-    <Compile Include="Assets\Script\Player\DecisionPoint.cs" />
-    <Compile Include="Assets\Script\Bullet\moveDanmuBall.cs" />
-    <Compile Include="Assets\Script\PoolSystem\Pool.cs" />
-    <Compile Include="Assets\Script\UI\BackgroundMove.cs" />
-    <Compile Include="Assets\Script\Tool\Fps.cs" />
-    <Compile Include="Assets\Script\PoolSystem\PoolManager.cs" />
-    <Compile Include="Assets\Script\GameStage\Fuka.cs" />
-    <Compile Include="Assets\Script\GameStage\Stage1Midway.cs" />
-    <Compile Include="Assets\Script\System\FukaProcess.cs" />
-    <Compile Include="Assets\Script\System\ViewPort.cs" />
-    <Compile Include="Assets\Script\Enemy\ship1Fire.cs" />
-    <Compile Include="Assets\Script\GameStage\Fuka1_1.cs" />
-    <Compile Include="Assets\Script\System\GameSettings.cs" />
-    <Compile Include="Assets\Script\System\DestroyDanmu.cs" />
-    <Compile Include="Assets\Script\Player\ReimuControl.cs" />
-    <Compile Include="Assets\Script\System\SceneLoader.cs" />
-    <Compile Include="Assets\Script\System\DanmuPool.cs" />
-    <Compile Include="Assets\Script\System\AudioControl.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyColider.cs" />
-    <Compile Include="Assets\Script\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\RedPointBig.cs" />
+    <Compile Include="Assets\Scripts\GameStage\Fuka1_2.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Input\oldPlayerInput.cs" />
+    <Compile Include="Assets\Scripts\UI\texStage.cs" />
+    <Compile Include="Assets\Scripts\System\GameData.cs" />
+    <Compile Include="Assets\Scripts\GameStage\Stage1.cs" />
+    <Compile Include="Assets\Scripts\GameObjectFactory\EnemyFactory.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\SpellPoint.cs" />
+    <Compile Include="Assets\Scripts\System\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Bullet\AutoBulletPlayer.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Bullet\DanmuReflect.cs" />
+    <Compile Include="Assets\Scripts\Tool\PersistentSingleton.cs" />
+    <Compile Include="Assets\Scripts\GameStage\Fuka1Finish.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\RedPoint.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuUIcontroller.cs" />
+    <Compile Include="Assets\Scripts\Input\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Player\oldPlayerControl.cs" />
+    <Compile Include="Assets\Scripts\UI\GameUIControl.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\BluePoint.cs" />
+    <Compile Include="Assets\Scripts\System\EnvironmentObjectsManager.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Enemy\Boss.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\PlayerState\PlayerState.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Input\InputActions.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Bullet\BulletPlayer.cs" />
+    <Compile Include="Assets\Scripts\System\DialogSystem\Dialog.cs" />
+    <Compile Include="Assets\Scripts\System\BoundaryBulletCleaner.cs" />
+    <Compile Include="Assets\Scripts\GameStage\Fuka1_3.cs" />
+    <Compile Include="Assets\Scripts\Input\PlayerInputActions.cs" />
+    <Compile Include="Assets\Scripts\System\GameControl.cs" />
+    <Compile Include="Assets\Scripts\GameObjectFactory\DanmuFactory.cs" />
+    <Compile Include="Assets\Scripts\Tool\Singleton.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Enemy\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\GameSettings\GameSettingsData.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Player\DecisionPoint.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\LootSetting.cs" />
+    <Compile Include="Assets\Scripts\PoolSystem\Pool.cs" />
+    <Compile Include="Assets\Scripts\System\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\UI\BackgroundMove.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\PlayerState\PlayerStateMachine.cs" />
+    <Compile Include="Assets\Scripts\System\DialogSystem\DialogSystem.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\GreenPointLittle.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Bullet\Danmu.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\LootSpawner.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\Base\IState.cs" />
+    <Compile Include="Assets\Scripts\Tool\Fps.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\Base\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\PoolSystem\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\GameStage\Fuka.cs" />
+    <Compile Include="Assets\Scripts\GameStage\Stage1Midway.cs" />
+    <Compile Include="Assets\Scripts\System\FukaProcess.cs" />
+    <Compile Include="Assets\Scripts\GameSettings\GameSettings.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Enemy\EnemyColider.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Enemy\ship1Fire.cs" />
+    <Compile Include="Assets\Scripts\GameStage\Fuka1_1.cs" />
+    <Compile Include="Assets\Scripts\System\BoundaryCleaner.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\PlayerState\PlayerState_Move.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\LifePoint.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Player\ReimuControl.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\LootItem\LootItem.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\VFX\EnemyDeadVFX.cs" />
+    <Compile Include="Assets\Scripts\System\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\StateMachine\PlayerState\PlayerState_Idle.cs" />
+    <Compile Include="Assets\Scripts\Tool\MyTimer.cs" />
+    <Compile Include="Assets\Scripts\System\AudioControl.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Resources\Font\zh-cn_Commonly_used.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\JMO Assets\WarFX\!WarFX Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -779,6 +836,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>

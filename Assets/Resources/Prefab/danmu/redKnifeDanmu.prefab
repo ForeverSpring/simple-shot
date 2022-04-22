@@ -30,7 +30,7 @@ RectTransform:
   m_GameObject: {fileID: 5499455925471087109}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 5.0617747}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -50,10 +50,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5499455925471087109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12214d50a7964f4688933ebcf1be1e1, type: 3}
+  m_Script: {fileID: 11500000, guid: b9c0a64e9d4b77046982bff848b135c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateCenter: {x: 0, y: 0, z: 0}
   isRotating: 0
 --- !u!222 &7760370297190865542
 CanvasRenderer:
@@ -151,5 +150,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.09, y: 0.32}
+  m_Size: {x: 0.14, y: 0.65}
   m_Direction: 0

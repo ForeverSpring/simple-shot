@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7450123967555341860}
+  - component: {fileID: 8272122963866335380}
   - component: {fileID: 121958110754122270}
   - component: {fileID: 4826415122680039592}
   - component: {fileID: 4609920252483299239}
@@ -21,8 +21,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7450123967555341860
-RectTransform:
+--- !u!4 &8272122963866335380
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30,17 +30,12 @@ RectTransform:
   m_GameObject: {fileID: 7284993880061646891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121958110754122270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,10 +45,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7284993880061646891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12214d50a7964f4688933ebcf1be1e1, type: 3}
+  m_Script: {fileID: 11500000, guid: b9c0a64e9d4b77046982bff848b135c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateCenter: {x: 0, y: 0, z: 0}
   isRotating: 0
 --- !u!222 &4826415122680039592
 CanvasRenderer:
@@ -152,4 +146,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.06
+  m_Radius: 0.12

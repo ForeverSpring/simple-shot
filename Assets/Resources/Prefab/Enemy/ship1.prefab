@@ -96,8 +96,8 @@ GameObject:
   - component: {fileID: 212833696140276620}
   - component: {fileID: 3305245545998117126}
   - component: {fileID: 1919371845983572600}
-  - component: {fileID: -7391675827754230826}
   - component: {fileID: 2190033089393370019}
+  - component: {fileID: 3605562632791959404}
   m_Layer: 0
   m_Name: ship1
   m_TagString: Enemy
@@ -211,21 +211,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-7391675827754230826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512782934554904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a77a8c9619ba81a47b68d77fb27b6214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fire: 0
-  fireRate: 1
-  fireSpeed: 0
 --- !u!114 &2190033089393370019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +224,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
+  score: 10
+  deadVfx: {fileID: 4984910444373394016, guid: 631f25dcb40aa434dba81668a5f1304f, type: 3}
+--- !u!114 &3605562632791959404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512782934554904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1c7b10c66f50f4a814911a8611ab94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootSettings:
+  - prefab: {fileID: 3013253591910019865, guid: 2e00c0212aa1c3e41980590991fc26a2,
+      type: 3}
+    dropPercentage: 60
+    Times: 1
+  - prefab: {fileID: 3721824141363714327, guid: 96011aae05e0deb40bcb885977df71f6,
+      type: 3}
+    dropPercentage: 60
+    Times: 1
 --- !u!1 &1818141105757828
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ TagManager:
   - Bullet
   - UILife
   - UIBomb
+  - Enemy
+  - LootItem
   layers:
   - Default
   - TransparentFX
@@ -18,8 +20,8 @@ TagManager:
   - Water
   - UI
   - Background
-  - 
-  - 
+  - Bullet
+  - Boss
   - 
   - 
   - 
@@ -46,4 +48,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Bullet
+    uniqueID: 3995994917
+    locked: 0
+  - name: Boss
+    uniqueID: 962118715
     locked: 0

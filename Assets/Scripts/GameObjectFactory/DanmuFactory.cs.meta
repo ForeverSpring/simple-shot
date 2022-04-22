@@ -1,0 +1,47 @@
+fileFormatVersion: 2
+guid: 08f4741c7dc537a4289720519618c534
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - redBallDanmu: {fileID: 4350984709814296059, guid: 691f19859761acf409ac5f6506b733fc,
+      type: 3}
+  - blueBallDanmu: {fileID: 7284993880061646891, guid: be6daaa7ff7493847ac7e4d652b320b8,
+      type: 3}
+  - greenBallDanmu: {fileID: 6667300521545455722, guid: db0fdb9a14f1da34ba5549cfac0865f6,
+      type: 3}
+  - redKnifeDanmu: {fileID: 5499455925471087109, guid: 8301b300a6447ef4cac02cdec362ce68,
+      type: 3}
+  - blueBallReflectDanmu: {fileID: 3610184751883767401, guid: a5f1d3cbf1a602044b0ac1f0445b4554,
+      type: 3}
+  - blueBigBallDanmu: {fileID: 1659550940354334831, guid: 54255d7ebf18c704a85231d1b9402232,
+      type: 3}
+  - whiteSmallBallDanmu: {fileID: 8563929673357236005, guid: 9f15507e01c0d2a42893c707deb3498f,
+      type: 3}
+  - fireball_red_tail_big: {fileID: 1973797488871700, guid: 48e06088b7e195f40898a828bd389ec3,
+      type: 3}
+  - redDiamondDanmu: {fileID: 7284993880061646891, guid: 91dadb5fcbdb35e4e804a6b74b9ea7f6,
+      type: 3}
+  - blueDiamondDanmu: {fileID: 7284993880061646891, guid: 2f5cfa9cefe8f764bb24ccfd5514ca84,
+      type: 3}
+  - greenDiamondDanmu: {fileID: 7284993880061646891, guid: b1776a5ad088b304d9538c3d415e4542,
+      type: 3}
+  - yellowDiamondDanmu: {fileID: 7284993880061646891, guid: 6470b8b408558074fa3eae84e127e878,
+      type: 3}
+  - whiteDiamondDanmu: {fileID: 7284993880061646891, guid: a510bb44e6465984fbc5e5c453110df5,
+      type: 3}
+  - redCubeDanmu: {fileID: 7284993880061646891, guid: 4ae1a89f3fc0a5d41bcfb9f52b9c2d6a,
+      type: 3}
+  - blueCubeDanmu: {fileID: 7284993880061646891, guid: 6bd35ca06f9fbca48aac8911046e551b,
+      type: 3}
+  - greenCubeDanmu: {fileID: 7284993880061646891, guid: 3011adb141783bf4b8eedb007539fdcb,
+      type: 3}
+  - yellowCubeDanmu: {fileID: 7284993880061646891, guid: 368e75931011bd64a9b9789ff9a68791,
+      type: 3}
+  - blackCubeDanmu: {fileID: 7284993880061646891, guid: 92588e71d422e984598065c77b33dd97,
+      type: 3}
+  executionOrder: -10
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

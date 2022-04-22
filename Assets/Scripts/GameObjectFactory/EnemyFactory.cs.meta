@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 511117b59e3bc194ea6619b38d20395e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BullBoss: {fileID: 5518441043022452171, guid: f586f4649fcfefc4f93d2ef16d618ebc,
+      type: 3}
+  - ZakuBoss: {fileID: 5518441043022452171, guid: 9fbf06449e2a1b84bb5c4fac27383a1c,
+      type: 3}
+  - ship1Enemy: {fileID: 1512782934554904, guid: 401d8aca9e846254890399f66cd7de66,
+      type: 3}
+  - ship2Enemy: {fileID: 1988959072326566, guid: 2ce1fb9d977e03b49a1ce0113faf945e,
+      type: 3}
+  - butterflyEnemy: {fileID: 1512782934554904, guid: a0c55025b90edd14d9de37d424d9ce02,
+      type: 3}
+  - redNormalEnemy: {fileID: 1512782934554904, guid: 9eeec92f34103e447ba0b5004d807b21,
+      type: 3}
+  - blueNormalEnemy: {fileID: 1512782934554904, guid: f5c98305ab187e344930e2ae4ee80794,
+      type: 3}
+  - greenNormalEnemy: {fileID: 1512782934554904, guid: 268be9ef8c2d1484b9da74f063d6b0d4,
+      type: 3}
+  - yellowNormalEnemy: {fileID: 1512782934554904, guid: e1caf8713dff49d46bd1dbc74195eebc,
+      type: 3}
+  - redHyperEnemy: {fileID: 1512782934554904, guid: afb74334a1a6eff4a877d39f9798a6c7,
+      type: 3}
+  - blueHyperEnemy: {fileID: 1512782934554904, guid: b1743f07e3f0b16419bebdfa80d4af8f,
+      type: 3}
+  - greenHyperEnemy: {fileID: 1512782934554904, guid: 0e79c5f9055414f4e93086b8840bc11b,
+      type: 3}
+  - yellowHyperEnemy: {fileID: 1512782934554904, guid: bf035d31100a6cb4eba34e00e8d987d7,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

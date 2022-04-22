@@ -734,7 +734,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -777,6 +777,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1589,13 +1601,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: danmupicture_38
+      name: diamondWhite
       rect:
         serializedVersion: 2
-        x: 10
-        y: 336
-        width: 256
-        height: 128
+        x: 14
+        y: 432
+        width: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3440,7 +3452,7 @@ TextureImporter:
       name: danmupicture_126
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 126
         width: 15
         height: 30
@@ -5587,7 +5599,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5595,6 +5607,321 @@ TextureImporter:
       bones: []
       spriteID: baf0f6384789dca30800000000000000
       internalID: 4237210450614226859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diamondRed
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 432
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94cb388bd1fdd04a9ce28f033e1bee6
+      internalID: 1317613172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diamondBlue
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 432
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c504c001c40a62449359f2423b75fc6
+      internalID: 1809401469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diamondGreen
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 432
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c676af4f9c18f174faf373c1aeeb21c4
+      internalID: 1872261228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diamondYellow
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 432
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bca7476b260a84c8ebb3cd502649da
+      internalID: -1600693807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CubeDanmuBlack
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 417
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928faf6c1718a664eaea32e8894a629f
+      internalID: -1191898518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CubeDanmuRed
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 417
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56a1a4b2ef5e444596bb35866916585
+      internalID: -756054214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CubeDanmuBlue
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 417
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8b72bc4d255814b97372466936ac98
+      internalID: -413671294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CubeDanmuGreen
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 417
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9cd81607159af4e875fda33215e6c5
+      internalID: -1375251546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CubeDanmuYellow
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 417
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e757243cf2b465a478e21642572f31a8
+      internalID: -2064767873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarDanmuBlack
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 369
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0167b0f2d162caa41981db4636bfc97b
+      internalID: -663383941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarDanmuRed
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 369
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cb3193deb233d47bd35b5a20ca604e
+      internalID: -198207140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarDanmuBlue
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 369
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11cba5fe408abd4c91b5b1b972de146
+      internalID: 1541186968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarDanmuGreen
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 369
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176515dac7a40dc49af4ce45157086e9
+      internalID: 738724933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarDanmuYellow
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 369
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a3f6f1cf9262a44bcb6891213b994a
+      internalID: -1735115420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarDanmuWhite
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 369
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306c08983d391654aae902e1982b28f4
+      internalID: 1061063807
       vertices: []
       indices: 
       edges: []
@@ -5619,11 +5946,14 @@ TextureImporter:
       danmupicture_78: 2780470413859845398
       danmupicture_167: 8903284650861647736
       danmupicture_166: -6687810684899341333
+      StarDanmuRed: -198207140
       danmupicture_54: -2883428885770663618
       danmupicture_69: 9189319252431514279
       danmupicture_16: 2096552825804706108
       danmupicture_81: -5422470793563510747
+      StarDanmuWhite: 1061063807
       danmupicture_71: -5419299604205012701
+      CubeDanmuRed: -756054214
       danmupicture_51: -4423203477157710833
       danmupicture_86: -733775415358181301
       danmupicture_89: 4965250818019064749
@@ -5667,6 +5997,8 @@ TextureImporter:
       danmupicture_104: -5899724643585913227
       danmupicture_224: 8015289680158159624
       danmupicture_124: -5838850316051630989
+      diamondYellow: -1600693807
+      diamondWhite: -889015237120799369
       danmupicture_108: -4117080610475411945
       danmupicture_115: -709730781385551188
       danmupicture_144: -5339823605981305873
@@ -5677,10 +6009,12 @@ TextureImporter:
       danmupicture_126: 6316755927491688168
       danmupicture_65: 9124462500380077546
       danmupicture_184: -1169423050614531378
+      diamondRed: 1317613172
       danmupicture_28: -3000170275144558561
       danmupicture_183: -8145800507258247683
       danmupicture_9: -445177446992248038
       danmupicture_158: 5522320184784622061
+      StarDanmuYellow: -1735115420
       danmupicture_172: 1736171601345934909
       danmupicture_227: 3561219770737024195
       danmupicture_25: 4128971355334959675
@@ -5690,7 +6024,6 @@ TextureImporter:
       danmupicture_121: 6321367769074244991
       danmupicture_92: 7498780590855640950
       danmupicture_129: 774916051089103128
-      danmupicture_38: -889015237120799369
       danmupicture_206: -6009160122656115517
       danmupicture_95: 3886037685944255860
       danmupicture_226: 7320912187350718114
@@ -5723,6 +6056,7 @@ TextureImporter:
       danmupicture_200: 8055713028811126968
       danmupicture_114: -8625412677483408450
       danmupicture_165: 1841699546356667278
+      StarDanmuBlue: 1541186968
       danmupicture_49: 5786997103081900148
       danmupicture_157: -422024556544376778
       danmupicture_22: -8430808384059610808
@@ -5747,11 +6081,13 @@ TextureImporter:
       danmupicture_63: 610404324093656488
       danmupicture_80: -2994454718873772714
       danmupicture_39: 1523426067958179683
+      danmupicture_67: 6580015979569683107
       danmupicture_139: -2752279088210751759
       danmupicture_12: 2991211338013655197
-      danmupicture_67: 6580015979569683107
       danmupicture_132: 4175173604108323651
       danmupicture_34: -5731921682612224003
+      CubeDanmuYellow: -2064767873
+      StarDanmuGreen: 738724933
       danmupicture_154: 638095852993643888
       danmupicture_35: -2745595057579577688
       danmupicture_180: -2470171018453328816
@@ -5763,6 +6099,7 @@ TextureImporter:
       danmupicture_222: -4063268781219004004
       danmupicture_5: 954471119943416504
       danmupicture_30: 87701309590298537
+      StarDanmuBlack: -663383941
       danmupicture_37: 1048372342020810243
       danmupicture_88: 1353421500201998199
       danmupicture_187: 8544533106491704106
@@ -5782,6 +6119,7 @@ TextureImporter:
       danmupicture_105: 3449109221329093302
       danmupicture_112: -3621154587622261142
       danmupicture_192: 5938312358164823359
+      CubeDanmuGreen: -1375251546
       danmupicture_106: -2416344423452100976
       danmupicture_53: 3641238672278463379
       danmupicture_169: 3187589279150090754
@@ -5800,6 +6138,7 @@ TextureImporter:
       danmupicture_6: 8446919445418382355
       danmupicture_142: 2923832126568360964
       danmupicture_107: -9052304876384849728
+      CubeDanmuBlue: -413671294
       danmupicture_97: -770912942118369901
       danmupicture_2: 2217659521323256437
       danmupicture_152: 3556967378421728560
@@ -5811,8 +6150,10 @@ TextureImporter:
       danmupicture_156: 7926451728810022271
       danmupicture_147: -2673391121538533420
       danmupicture_204: 1903998977077467211
+      CubeDanmuBlack: -1191898518
       danmupicture_59: -61639427700753643
       danmupicture_179: 8356764283194352205
+      diamondBlue: 1809401469
       danmupicture_101: 5232642222618961236
       danmupicture_133: 861668699340408514
       danmupicture_220: -5081615438594657594
@@ -5828,6 +6169,7 @@ TextureImporter:
       danmupicture_1: 4965201787272582420
       danmupicture_61: 7188413024708356550
       danmupicture_3: -1950046322217264649
+      diamondGreen: 1872261228
       danmupicture_36: 9128010101765884208
       danmupicture_82: 5685697324157540377
       danmupicture_164: 9067083794172408837
